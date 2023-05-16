@@ -1,0 +1,30 @@
+:root {
+  --main-color: #ffffff;
+  --accent-color: #2C3878;
+  --text-color: #000000;
+  --animation-time: 0.3s;
+}
+
+// fonts
+$font-primary: 'Poppins-Regular', Arial, Helvetica, sans-serif;
+$font-medium: 'Poppins-Medium', Arial, Helvetica, sans-serif;
+$font-semibold: 'Poppins-SemiBold', Arial, Helvetica, sans-serif;
+$font-bold: 'Poppins-Bold', Arial, Helvetica, sans-serif;
+
+// accent colors
+$blue: var(--accent-color);
+$blue90: #566093;
+$blue75: #8088AE;
+$blue50: #ABAFC9;
+$blue25: #D5D7E4;
+$blue10: #EAEBF2;
+
+
+// grayscale colors
+$black: #000000;
+$black70: #141414;
+$black50: #333333;
+$black30: #3C3C3C;
+$gray: #9C9C9C;
+$lightgray: #D9D9D9;
+$white: #ffffff;
