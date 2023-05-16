@@ -1,0 +1,48 @@
+.header {
+  box-sizing: border-box;
+  padding: 40px 120px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    display: flex;
+    cursor: pointer;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 74px;
+  }
+
+    .list {
+      list-style: none;
+      display: flex;
+      gap: 74px;
+
+      &__item {
+        text-decoration: none;
+        cursor: pointer;
+        font-family: $font-primary;
+        font-size: 16px;
+        line-height: 160%;
+      }
+    }
+
+  .button {
+    box-sizing: border-box;
+    padding: 14px 32px;
+    border: transparent;
+    cursor: pointer;
+    font-family: $font-medium;
+    font-size: 14px;
+    line-height: 150%;
+
+      &__primary {
+        background-color: var(--accent-color);
+        color: $white;
+      }
+  }
+
+}
