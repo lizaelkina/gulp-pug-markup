@@ -1,0 +1,19 @@
+.button {
+  box-sizing: border-box;
+  padding: 14px 32px;
+  border: transparent;
+  cursor: pointer;
+  font-family: $font-medium;
+  font-size: 14px;
+  line-height: 150%;
+
+  &__primary {
+    background-color: var(--accent-color);
+    color: $white;
+  }
+
+  &__secondary {
+    background-color: $white;
+    color: $black;
+  }
+}
