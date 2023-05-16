@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+
+    &_logo {
+      max-width: 481px;
+      gap: 9px;
+
+      .slogan {
+        font-family: $font-semibold;
+        font-size: 36px;
+        line-height: 170%;
+      }
+    }
+
+    &_form {
+      max-width: 440px;
+      gap: 40px;
+
+      .form {
+        border-bottom: 1px solid $black70;
+      }
+    }
+  }
+
+}
