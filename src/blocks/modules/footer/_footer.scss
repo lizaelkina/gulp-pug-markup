@@ -12,19 +12,95 @@
 
       .slogan {
         font-family: $font-semibold;
+        font-weight: 600;
         font-size: 36px;
         line-height: 170%;
       }
     }
 
-    &_form {
+    &_info {
       max-width: 440px;
+      display: flex;
       gap: 40px;
 
-      .form {
-        border-bottom: 1px solid $black70;
+      .footer__form {
+        position: relative;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $gray;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+
+        &_label {
+          padding-left: 24px;
+          font-family: $font-primary;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 160%;
+          background-position: left;
+          background-size: 14px 14px;
+          background-image: url(../../../img/svg/icon-circle.svg);
+          background-repeat: no-repeat;
+        }
+
+        &_input {
+          width: 85%;
+          border: 0;
+          background-color: transparent;
+          font-family: $font-primary;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 160%;
+        }
+
+        &_input:focus {
+          outline-color: $black30;
+        }
+
+        &_input::placeholder {
+          font-family: $font-primary;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 160%;
+          color: $lightgray;
+        }
+
+        &_btn {
+          position: absolute;
+          bottom: 25px;
+          right: 0;
+          padding: 0;
+          border: 0;
+          width: 25px;
+          height: 15px;
+          background-color: transparent;
+          background-image: url(../../../img/svg/footer-button.svg);
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
       }
+
+      .footer__social {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_heading {
+          text-align: right;
+          font-family: $font-primary;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+        }
+
+        &_list {
+          list-style: none;
+          display: flex;
+          justify-content: flex-end;
+          gap: 20px;
+        }
+      }
+
     }
   }
-
 }

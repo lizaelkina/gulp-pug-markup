@@ -1,7 +1,20 @@
 footer.footer.page__footer
     .footer__column.footer__column_logo
         include ../../components/logo/logo
-        h2.slogan One of the best furniture agency.
-    .footer__column.footer__column_form
-        form.form(name='subscription' novalidate)
-            label.form__label Enter  your email to get the latest news
+        h2.slogan one of the best furniture agency.
+    .footer__column.footer__column_info
+        form.footer__form(name='subscription' novalidate)
+            label.footer__form_label Enter  your email to get the latest news
+            input.footer__form_input(type='email' name='email' placeholder='Email Address')
+            button.footer__form_btn(type='submit' aria-label='Подписаться на рассылку')
+        nav.footer__social
+            h2.footer__social_heading Follow us On
+            ul.footer__social_list
+                li
+                    a(href='#').icon-social.icon-social_facebook
+                li
+                    a(href='#').icon-social.icon-social_instagram
+                li
+                    a(href='#').icon-social.icon-social_tiktok
+                li
+                    a(href='#').icon-social.icon-social_youtube
