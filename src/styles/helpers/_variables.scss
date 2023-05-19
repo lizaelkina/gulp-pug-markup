@@ -1,9 +1,3 @@
-:root {
-  --main-color: #ffffff;
-  --accent-color: #2C3878;
-  --text-color: #000000;
-}
-
 // fonts
 $font-primary: 'Poppins-Regular', Arial, Helvetica, sans-serif;
 $font-medium: 'Poppins-Medium', Arial, Helvetica, sans-serif;
@@ -11,7 +5,7 @@ $font-semibold: 'Poppins-SemiBold', Arial, Helvetica, sans-serif;
 $font-bold: 'Poppins-Bold', Arial, Helvetica, sans-serif;
 
 // accent colors
-$blue: var(--accent-color);
+$blue: #2C3878;
 $blue90: #566093;
 $blue75: #8088AE;
 $blue50: #ABAFC9;

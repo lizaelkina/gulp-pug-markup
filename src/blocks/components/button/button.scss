@@ -10,7 +10,7 @@
   transition: opacity .3s ease;
 
   &__primary {
-    background-color: var(--accent-color);
+    background-color: $blue;
     color: $white;
   }
 
