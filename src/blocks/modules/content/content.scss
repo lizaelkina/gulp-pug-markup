@@ -1,7 +1,7 @@
 .content {
   margin-left: 120px;
   margin-right: 120px;
-  flex-grow: 1;
+  height: calc(100vh - 138px);
   display: flex;
   flex-direction: column;
   gap: 160px;
