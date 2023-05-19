@@ -8,7 +8,7 @@
     margin: 0;
     font-family: $font-bold;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 100px;
     line-height: 140%;
     color: $blue;
   }
@@ -16,7 +16,7 @@
   &__title {
     font-family: $font-semibold;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 170%;
   }
 
@@ -30,7 +30,7 @@
   &__text {
     font-family: $font-primary;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 160%;
 
     a {
