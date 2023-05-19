@@ -1,0 +1,47 @@
+.main-banner {
+  @include section;
+  padding-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+
+  &__title {
+    max-width: 681px;
+    font-family: $font-bold;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 140%;
+    color: $black50;
+  }
+
+  &__border {
+    position: absolute;
+    margin-left: auto;
+    width: 45%;
+    top: 100px;
+    right: 120px;
+    border: 2px solid $black;
+  }
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 1200 / 513;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../../../img/main-banner.png);
+    background-repeat: no-repeat;
+  }
+
+  &__rectangle {
+    position: absolute;
+    top: 190px;
+    right: 262px;
+    box-sizing: border-box;
+    padding: 40px 48px 44px;
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+  }
+}
