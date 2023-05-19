@@ -2,12 +2,7 @@ extends layouts/default
 include helpers/mixins
 
 block variables
-	- const title = "Dananz/Home"
+    - const title = "Home"
 
 block content
-	include ../blocks/modules/header/header
-	include ../blocks/modules/footer/footer
-
-block scripts
-	script(src="js/vendor.js")
-	script(src="js/main.js")
+  h1 index
