@@ -2,8 +2,12 @@ header.header.page__header
   include ../../components/logo/logo
   nav.header__links
     ul.list
-      li.list__item Home
-      li.list__item About Us
-      li.list__item Services
-      li.list__item Our Teams
-    button.button.button__primary Contact Us
+      li
+        a.list__item.list__item_active(href='/') Home
+      li
+        a.list__item(href='/about-us.html') About Us
+      li
+        a.list__item(href='/services.html') Services
+      li
+        a.list__item(href='/our-teams.html') Our Teams
+    a.button.button__primary(href='/contact-us.html') Contact Us
