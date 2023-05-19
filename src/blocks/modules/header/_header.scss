@@ -27,5 +27,9 @@
         font-family: $font-semibold;
       }
     }
+
+    &__item:hover {
+      opacity: .6;
+    }
   }
 }
