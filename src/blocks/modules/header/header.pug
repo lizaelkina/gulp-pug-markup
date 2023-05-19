@@ -1,3 +1,5 @@
+include ../../../views/helpers/mixins
+
 mixin menu(title, url)
   li
     a.list__item(href=url class!=attributes.class)= title
@@ -10,4 +12,4 @@ header.header.page__header
       +menu('About Us', '/about-us.html')
       +menu('Services', '/services.html')
       +menu('Our Teams', '/our-teams.html')
-    a.button.button__primary(href='/contact-us.html') Contact Us
+    +link-button('Contact Us', '/contact-us.html')
