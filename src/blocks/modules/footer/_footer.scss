@@ -81,12 +81,12 @@
       }
 
       .footer__social {
+        margin-left: auto;
         display: flex;
         flex-direction: column;
         gap: 10px;
 
         &_heading {
-          text-align: right;
           font-family: $font-primary;
           font-weight: 400;
           font-size: 16px;
@@ -96,11 +96,30 @@
         &_list {
           list-style: none;
           display: flex;
-          justify-content: flex-end;
           gap: 20px;
         }
-      }
 
+        .icon-social {
+          cursor: pointer;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: $lightgray;
+          transition: opacity .3s ease;
+
+          &__img {
+            width: 26px;
+            height: 26px;
+          }
+        }
+
+        .icon-social:hover {
+          opacity: .6;
+        }
+      }
     }
   }
 }
