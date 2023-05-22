@@ -1,7 +1,7 @@
 .main-banner {
   @include section;
-  padding-top: 50px;
   position: relative;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 46px;
@@ -24,15 +24,6 @@
     border: 2px solid $black;
   }
 
-  &__image {
-    width: 100%;
-    aspect-ratio: 1200 / 513;
-    background-position: center;
-    background-size: contain;
-    background-image: url(../../../img/main-banner.png);
-    background-repeat: no-repeat;
-  }
-
   &__rectangle {
     position: absolute;
     top: 190px;
@@ -43,5 +34,50 @@
     display: flex;
     flex-direction: column;
     gap: 57px;
+
+    .rectangle__row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $white;
+    }
+
+    .rectangle__title {
+      margin: 0;
+      font-family: $font-primary;
+      font-weight: 400;
+      font-size: 52px;
+      line-height: 160%;
+    }
+
+    .rectangle__subtitle {
+      font-family: $font-primary;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+    }
+  }
+
+  &__side-text {
+    position: absolute;
+    top: 230px;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-primary;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: $black50;
+    transform: rotate(-90deg);
+  }
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 1200 / 513;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../../../img/main-banner.png);
+    background-repeat: no-repeat;
   }
 }
