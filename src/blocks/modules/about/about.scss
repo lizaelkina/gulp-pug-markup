@@ -1,0 +1,38 @@
+.about {
+  @include section;
+
+  &__blockquote {
+    margin: 32px 0 60px;
+    font-family: $font-semibold;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 170%;
+  }
+
+  &__container {
+    display: flex;
+    gap: 94px;
+  }
+
+  &__image {
+    width: 883px;
+    height: 525px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__info {
+    margin-top: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__text {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: $gray;
+  }
+}

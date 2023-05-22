@@ -1,0 +1,21 @@
+.border-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &__text {
+    margin: 0;
+    font-family: $font-medium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  &__border {
+    flex: 1;
+    border: 2px solid $black;
+  }
+}

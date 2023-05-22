@@ -1,0 +1,10 @@
+include ../../../views/helpers/mixins
+
+section.about
+  +border-section('About')
+  blockquote.about__blockquote "We're one of the best furniture agency. Prioritizing customers and making purchases easy are the hallmarks of our agency."
+  .about__container
+    img.about__image(src='../../../img/home-page/about-banner.png' alt='Our design')
+    .about__info
+      p.about__text Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.
+      +link-button('Learn More', '#')
