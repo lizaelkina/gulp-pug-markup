@@ -5,7 +5,7 @@
         "type": "git",
         "url": "https://github.com/lizapetkova/gulp-pug-markup"
     },
-    "homepage": "./",
+    "homepage": "https://github.com/lizapetkova/gulp-pug-markup",
     "license": "GPL-3.0-only",
     "scripts": {
         "dev": "gulp",
@@ -26,7 +26,7 @@
         "bem-c": "bem create $* -l src/blocks/components",
         "bem-m": "bem create $* -l src/blocks/modules",
         "predeploy": "yarn run build",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
         "@babel/core": "^7.17.5",
