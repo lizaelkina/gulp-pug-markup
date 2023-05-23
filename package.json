@@ -3,7 +3,7 @@
     "author": "Liza Petkova",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/lizapetkova/gulp-pug-markup"
+        "url": "https://github.com/lizapetkova/gulp-pug-markup"
     },
     "homepage": "./",
     "license": "GPL-3.0-only",
@@ -24,7 +24,9 @@
         "lint:scripts": "eslint \"src/js/**/*.js\"",
         "lint:scripts --fix": "eslint --fix \"src/js/**/*.js\"",
         "bem-c": "bem create $* -l src/blocks/components",
-        "bem-m": "bem create $* -l src/blocks/modules"
+        "bem-m": "bem create $* -l src/blocks/modules",
+        "predeploy": "yarn run build",
+        "deploy": "gh-pages -d build"
     },
     "devDependencies": {
         "@babel/core": "^7.17.5",
@@ -37,6 +39,7 @@
         "browser-sync": "^2.27.7",
         "del": "^6.0.0",
         "eslint": "^8.11.0",
+        "gh-pages": "^5.0.0",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^8.0.0",
         "gulp-clean-css": "^4.3.0",
