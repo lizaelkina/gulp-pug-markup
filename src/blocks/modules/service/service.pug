@@ -1,0 +1,17 @@
+include ../../../views/helpers/mixins
+
+mixin service-list(number, title)
+  li.service__item
+    a(href='#').service__container
+      span.service__container_number= number
+      span.service__container_grow= title
+      .service__container_arrow
+
+section.service
+  +border-section('Service')
+  p.service__title attractive furniture with the best quality.
+  span.service__text Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
+  ul.service__list
+    +service-list('01', 'Interior Design')
+    +service-list('02', 'Consultant')
+    +service-list('03', 'Construction Consultant')
