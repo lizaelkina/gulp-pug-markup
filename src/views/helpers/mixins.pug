@@ -5,3 +5,9 @@ mixin border-section(title)
   .border-section
     p.border-section__text= title
     .border-section__border
+
+mixin card-avatar(src, title, subtitle, extraClass)
+  .card-avatar(class!=extraClass)
+    img.card-avatar__image(src=src alt=title)
+    p.card-avatar__title= title
+    span.card-avatar__subtitle= subtitle

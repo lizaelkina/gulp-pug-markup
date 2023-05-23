@@ -1,0 +1,54 @@
+.card-avatar {
+  box-sizing: border-box;
+  padding: 17px 20px;
+  background-color: $white;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: fit-content(56px) 165px;
+  grid-template-areas:
+    "card-avatar__image card-avatar__title"
+    "card-avatar__image card-avatar__subtitle";
+  column-gap: 20px;
+
+  &__position_right {
+    position: absolute;
+    top: 27px;
+    right: 120px;
+  }
+
+  &__position_left {
+    position: absolute;
+    top: 27px;
+    left: 120px;
+  }
+
+  &__image {
+    grid-area: card-avatar__image;
+    border-radius: 50%;
+    width: 51px;
+    height: 56px;
+    background-color: transparent;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__title {
+    grid-area: card-avatar__title;
+    margin: 0;
+    font-family: $font-semibold;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: $black;
+  }
+
+  &__subtitle {
+    grid-area: card-avatar__subtitle;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: $gray;
+    text-transform: uppercase;
+  }
+}
