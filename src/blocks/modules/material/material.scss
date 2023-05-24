@@ -1,0 +1,73 @@
+.material {
+  @include section;
+
+  &__border-section {
+    margin-top: 47px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 80px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    max-width: 348px;
+    font-family: $font-semibold;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 170%;
+  }
+
+  &__text {
+    margin-bottom: 23px;
+    display: block;
+    max-width: 497px;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: $gray;
+  }
+
+  &__images {
+    margin-top: -100px;
+    display: grid;
+    grid-template-columns: 342px 241px;
+    grid-template-rows: 225px 225px;
+    grid-template-areas:
+      "fist second"
+      "fist third";
+    gap: 40px;
+
+    &_fist {
+      grid-area: fist;
+      align-self: end;
+      width: 342px;
+      height: 392px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &_second {
+      grid-area: second;
+      width: 241px;
+      height: 225px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &_third {
+      grid-area: third;
+      width: 195px;
+      height: 178px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

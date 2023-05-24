@@ -1,0 +1,13 @@
+include ../../../views/helpers/mixins
+
+section.material
+  +border-section('Material', 'material__border-section')
+  .material__container
+    .material__info
+      p.material__title choice of materials for quality furniture.
+      span.material__text You can custom the material as desired. And our furniture uses the best materials and selected quality materials.
+      +link-button('button__secondary', 'See Materials', '#')
+    .material__images
+      img.material__images_fist(src='../../../img/home-page/material-img-1.png' alt='Wood')
+      img.material__images_second(src='../../../img/home-page/material-img-2.png' alt='Epoxy')
+      img.material__images_third(src='../../../img/home-page/material-img-3.png' alt='Stone')

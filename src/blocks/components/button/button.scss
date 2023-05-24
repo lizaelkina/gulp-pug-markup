@@ -1,6 +1,7 @@
 .button {
   cursor: pointer;
   max-width: 142px;
+  max-height: 49px;
   box-sizing: border-box;
   padding: 14px 32px;
   border: transparent;
@@ -22,6 +23,8 @@
   }
 
   &__secondary {
+    max-width: 159px;
+    padding: 13px 31px;
     background-color: $white;
     color: $black50;
     border: 1px solid $black30;
