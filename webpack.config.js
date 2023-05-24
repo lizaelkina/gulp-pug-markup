@@ -33,7 +33,7 @@ module.exports = {
                     loader: require.resolve("babel-loader"),
                     options: {
                         presets: [
-                            ["@babel/preset-env", { modules: false }]
+                            ["@babel/preset-env", {modules: false}]
                         ]
                     }
                 }
