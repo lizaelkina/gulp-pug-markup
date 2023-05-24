@@ -1,0 +1,20 @@
+include ../../../views/helpers/mixins
+
+mixin product__list(number, title, subtitle)
+  li.product__item
+    a(href='#').product__container-item
+      span.product__container-item_number= number
+      span.product__container-item_grow= title
+      .product__container-item_arrow
+      span.product__container-item_text= subtitle
+
+section.product
+  +border-section('Product')
+  .product__container
+    p.product__title Choose your product themes.
+    span.product__text Find the theme you want. If our choice of theme is not what you want, you can customize it as you want.
+  ul.product__list
+    +product__list('01', 'Vintage', 'the use of simple and limited elements to get the best effect or impression.')
+    +product__list('02', 'Minimalist', 'the use of simple and limited elements to get the best effect or impression.')
+    +product__list('03', 'Modern', 'the use of simple and limited elements to get the best effect or impression.')
+    +product__list('04', 'Transitional', 'the use of simple and limited elements to get the best effect or impression.')
