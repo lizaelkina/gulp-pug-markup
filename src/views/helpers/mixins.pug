@@ -1,8 +1,8 @@
-mixin link-button(title, href='#')
-  a.button.button__primary(href=href)= title
+mixin link-button(extraClass, title, href='#')
+  a.button(class!=extraClass)(href=href)= title
 
-mixin border-section(title)
-  .border-section
+mixin border-section(title, extraClass)
+  .border-section(class!=extraClass)
     h2.border-section__text= title
     .border-section__border
 
