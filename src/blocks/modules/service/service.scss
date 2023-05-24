@@ -2,7 +2,7 @@
   @include section;
   min-height: 829px;
   background-image: url(../../../img/home-page/service-banner.png);
-  background-position: right bottom;
+  background-position: right 33% bottom;
   background-repeat: no-repeat;
   background-size: 1076px 525px;
 
@@ -25,7 +25,7 @@
   }
 
   &__list {
-    width: 84%;
+    width: 74%;
     background-color: $white;
     box-sizing: border-box;
     padding: 40px 40px 40px 0;
