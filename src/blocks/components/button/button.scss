@@ -1,5 +1,8 @@
 .button {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 142px;
   max-height: 49px;
   box-sizing: border-box;
@@ -27,7 +30,7 @@
     padding: 13px 31px;
     background-color: $white;
     color: $black50;
-    border: 1px solid $black30;
+    outline: 1px solid $black30;
   }
 }
 

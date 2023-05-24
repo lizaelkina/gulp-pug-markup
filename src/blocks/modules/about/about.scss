@@ -10,26 +10,29 @@
   }
 
   &__container {
+    width: 100%;
     position: relative;
     display: flex;
     gap: 94px;
   }
 
   &__image {
-    width: 883px;
-    height: 525px;
+    max-width: 883px;
+    width: 70%;
+    aspect-ratio: 883 / 525;
     object-fit: cover;
     object-position: center;
   }
 
   &__info {
-    margin-top: 190px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 40px;
   }
 
   &__text {
+    margin: 0;
     font-family: $font-primary;
     font-weight: 400;
     font-size: 18px;
