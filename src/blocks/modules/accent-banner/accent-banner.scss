@@ -1,0 +1,31 @@
+.accent-banner {
+  @include section;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $blue;
+  display: grid;
+  grid-template-columns: fit-content(613px) fit-content(432px);
+  grid-template-areas:
+    "slogan text"
+    "slogan button";
+  column-gap: 155px;
+  row-gap: 20px;
+
+  &__slogan {
+    grid-area: slogan;
+    font-family: $font-semibold;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 170%;
+    color: $white;
+  }
+
+  &__text {
+    grid-area: text;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: $lightgray;
+  }
+}
