@@ -1,7 +1,8 @@
 extends ../layouts/default
+include ../../views/helpers/mixins
 
 block variables
     - const title = "Dananz/Services";
 
 block content
-  include ../../blocks/modules/404/404
+  +title-banner('Services', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', '../../../img/services-page/services-banner.png')
