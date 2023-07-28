@@ -12,7 +12,6 @@
 - SCSS
 - GULP
 
-[//]: # (## GitHub Pages)
+## GitHub Pages
 
-[//]: # ()
-[//]: # (- [Ссылка на сайт]&#40;https://lizapetkova.github.io/gulp-pug-markup/&#41;)
+- [Ссылка на сайт](https://lizapetkova.github.io/gulp-pug-markup/)
