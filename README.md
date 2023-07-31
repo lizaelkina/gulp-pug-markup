@@ -1,6 +1,6 @@
 # Interior Design
 
-- pet-проект по вёрстке
+- Pet-проект по вёрстке
 
 ## Описание проекта
 
@@ -12,6 +12,6 @@
 - SCSS
 - GULP
 
-## GitHub Pages
+## Ссылка на проект
 
-- [Ссылка на сайт](https://lizapetkova.github.io/gulp-pug-markup/)
+- http://gulp-markup.elkacloud.ru/
