@@ -14,4 +14,4 @@
 
 ## Ссылка на проект
 
-- http://gulp-markup.elkacloud.ru/
+- http://gulp-markup.elkacloud.ru
