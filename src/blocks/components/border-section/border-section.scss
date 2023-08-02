@@ -1,9 +1,13 @@
 .border-section {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   width: 50%;
   display: flex;
   align-items: center;
   gap: 20px;
+
+  &__image {
+    margin-bottom: 40px;
+  }
 
   &__text {
     margin: 0;
