@@ -29,15 +29,15 @@ mixin title(title, subtitle)
     h1.page-title__title= title
     p.page-title__subtitle= subtitle
 
-mixin title-banner(title, subtitle, src)
-  section.title-section.page__section
+mixin title-banner(title, subtitle, src, extraClass)
+  section.title-section(class!=extraClass)
     .page-title
       h1.page-title__title= title
       p.page-title__subtitle= subtitle
       img.page-title__image(src=src alt=title)
 
-mixin title-banner-about(title, subtitle, src)
-  section.title-section.page__section
+mixin title-banner-about(title, subtitle, src, extraClass)
+  section.title-section(class!=extraClass)
     .page-title
       h1.page-title__title= title
       p.page-title__subtitle.page-title__subtitle_about= subtitle
