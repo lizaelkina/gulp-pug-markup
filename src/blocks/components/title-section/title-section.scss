@@ -8,6 +8,7 @@
 
 .title-section__subtitle {
   display: block;
+  margin-bottom: 40px;
   max-width: 471px;
   font-family: $font-primary;
   font-weight: 400;
@@ -15,7 +16,7 @@
   line-height: 160%;
   color: $gray;
 
-  &_indent {
-    margin-bottom: 40px;
+  &_image {
+    margin-bottom: 80px;
   }
 }
