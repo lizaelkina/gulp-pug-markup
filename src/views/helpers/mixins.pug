@@ -30,14 +30,14 @@ mixin title(title, subtitle)
     p.page-title__subtitle= subtitle
 
 mixin title-banner(title, subtitle, src)
-  section.title-section
+  section.title-section.page__section
     .page-title
       h1.page-title__title= title
       p.page-title__subtitle= subtitle
       img.page-title__image(src=src alt=title)
 
 mixin title-banner-about(title, subtitle, src)
-  section.title-section
+  section.title-section.page__section
     .page-title
       h1.page-title__title= title
       p.page-title__subtitle.page-title__subtitle_about= subtitle
