@@ -1,0 +1,15 @@
+include ../../../views/helpers/mixins
+
+mixin service-shared-column(title, text)
+  .service-shared__column
+    .service-shared__icon
+    h3.service-shared__title= title
+    p.service-shared__text= text
+
+section.service-shared.page__section
+  +border-section('Service')
+  +section-title('Why Choose Us', 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.', 'title-section__subtitle_indent')
+  .service-shared__columns
+    +service-shared-column('High Quality', 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.')
+    +service-shared-column('Professional Designer', 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.')
+    +service-shared-column('The Best Services', 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.')

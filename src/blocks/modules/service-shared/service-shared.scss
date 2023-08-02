@@ -1,0 +1,41 @@
+.service-shared {
+  @include section;
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+  }
+
+  &__column {
+    padding: 20px 27px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__icon {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: $lightgray;
+  }
+
+  &__title {
+    font-family: $font-semibold;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: $gray;
+    text-align: center;
+  }
+}

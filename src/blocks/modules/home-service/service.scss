@@ -6,24 +6,6 @@
   background-repeat: no-repeat;
   background-size: 1076px 525px;
 
-  &__title {
-    margin: 0 0 24px;
-    font-family: $font-semibold;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 170%;
-  }
-
-  &__text {
-    display: block;
-    max-width: 471px;
-    font-family: $font-primary;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 160%;
-    color: $gray;
-  }
-
   &__list {
     width: 74%;
     background-color: $white;

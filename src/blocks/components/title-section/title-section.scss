@@ -1,0 +1,21 @@
+.title-section__title {
+  margin: 0 0 24px;
+  font-family: $font-semibold;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 170%;
+}
+
+.title-section__subtitle {
+  display: block;
+  max-width: 471px;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: $gray;
+
+  &_indent {
+    margin-bottom: 40px;
+  }
+}
