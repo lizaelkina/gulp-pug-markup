@@ -2,7 +2,7 @@
   @include section;
   margin-top: 160px;
   min-height: 829px;
-  background-image: url("https://lizapetkova.github.io/gulp-pug-markup/img/home-page/service-banner.png");
+  background-image: url("/img/home-page/service-banner.png");
   background-position: right 25% bottom;
   background-repeat: no-repeat;
   background-size: 1076px 525px;
@@ -64,7 +64,7 @@
       height: 32px;
       background-position: center;
       background-size: 32px 32px;
-      background-image: url("https://lizapetkova.github.io/gulp-pug-markup/img/svg/icon-arrow.svg");
+      background-image: url("/img/svg/icon-arrow.svg");
       background-repeat: no-repeat;
     }
   }
