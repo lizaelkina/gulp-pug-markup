@@ -6,13 +6,4 @@ section.main-banner
       span 2022
   .main-banner__border
   img.main-banner__image(src='./img/home-page/main-banner.png' alt='Example of our design')
-  .main-banner__rectangle
-    .rectangle__row
-      p.rectangle__title 350+
-      span.rectangle__subtitle Project Completed
-    .rectangle__row
-      p.rectangle__title 23+
-      span.rectangle__subtitle Professional Teams
-    .rectangle__row
-      p.rectangle__title 15+
-      span.rectangle__subtitle Years Experience
+  +rectangle('rectangle__position_absolute')

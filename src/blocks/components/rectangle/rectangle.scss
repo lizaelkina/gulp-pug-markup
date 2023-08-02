@@ -1,0 +1,36 @@
+.rectangle {
+  box-sizing: border-box;
+  padding: 40px 48px 44px;
+  background-color: $blue;
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+
+  &__position_absolute {
+    position: absolute;
+    top: 165px;
+    right: 285px;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 160%;
+  }
+
+  &__subtitle {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+  }
+}

@@ -6,6 +6,18 @@ mixin border-section(title, extraClass)
     h2.border-section__text= title
     .border-section__border
 
+mixin rectangle(extraClass)
+  .rectangle(class!=extraClass)
+    .rectangle__row
+      p.rectangle__title 350+
+      span.rectangle__subtitle Project Completed
+    .rectangle__row
+      p.rectangle__title 23+
+      span.rectangle__subtitle Professional Teams
+    .rectangle__row
+      p.rectangle__title 15+
+      span.rectangle__subtitle Years Experience
+
 mixin card-avatar(src, title, subtitle, extraClass)
   .card-avatar(class!=extraClass)
     img.card-avatar__image(src=src alt=title)

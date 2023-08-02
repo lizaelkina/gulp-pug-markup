@@ -34,39 +34,6 @@
     object-position: center;
   }
 
-  &__rectangle {
-    position: absolute;
-    top: 165px;
-    right: 285px;
-    box-sizing: border-box;
-    padding: 40px 48px 44px;
-    background-color: $blue;
-    display: flex;
-    flex-direction: column;
-    gap: 57px;
-
-    .rectangle__row {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: $white;
-    }
-
-    .rectangle__title {
-      margin: 0;
-      font-family: $font-primary;
-      font-weight: 400;
-      font-size: 52px;
-      line-height: 160%;
-    }
-
-    .rectangle__subtitle {
-      font-family: $font-primary;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 160%;
-    }
-  }
 
   &__side-text {
     display: flex;
