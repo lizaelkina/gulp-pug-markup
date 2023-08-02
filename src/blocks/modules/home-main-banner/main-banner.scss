@@ -1,7 +1,7 @@
 .main-banner {
   @include section;
+  @include section-first;
   position: relative;
-  margin-top: 50px;
 
   &__container {
     margin-bottom: 50px;

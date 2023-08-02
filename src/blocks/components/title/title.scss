@@ -1,0 +1,39 @@
+.title__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.title {
+  margin: 0;
+  font-family: $font-bold;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 140%;
+  color: $black;
+}
+
+.subtitle {
+  max-width: 518px;
+  margin: 0 0 21px;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: $black;
+  text-align: center;
+
+  &_about {
+    max-width: 582px;
+    margin-bottom: 50px;
+  }
+}
+
+.title__image {
+  max-width: 1200px;
+  width: 100%;
+  aspect-ratio: 1200 / 513;
+  object-fit: cover;
+  object-position: center;
+}

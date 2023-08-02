@@ -24,21 +24,13 @@ mixin card-avatar(src, title, subtitle, extraClass)
     p.card-avatar__title= title
     span.card-avatar__subtitle= subtitle
 
-mixin title(title, subtitle)
-  .page-title
-    h1.page-title__title= title
-    p.page-title__subtitle= subtitle
+mixin page-title(title, subtitle)
+  .title__container
+    h1.title= title
+    p.subtitle= subtitle
 
-mixin title-banner(title, subtitle, src, extraClass)
-  section.title-section(class!=extraClass)
-    .page-title
-      h1.page-title__title= title
-      p.page-title__subtitle= subtitle
-      img.page-title__image(src=src alt=title)
-
-mixin title-banner-about(title, subtitle, src, extraClass)
-  section.title-section(class!=extraClass)
-    .page-title
-      h1.page-title__title= title
-      p.page-title__subtitle.page-title__subtitle_about= subtitle
-      img.page-title__image.page-title__image_about(src=src alt=title)
+mixin page-title-banner(title, subtitle, src, extraClass)
+  .title__container
+    h1.title= title
+    p.subtitle(class!=extraClass)= subtitle
+    img.title__image(src=src alt=title)
