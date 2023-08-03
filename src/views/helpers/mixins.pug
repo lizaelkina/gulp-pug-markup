@@ -24,10 +24,10 @@ mixin card-avatar(src, title, subtitle, extraClass)
     p.card-avatar__title= title
     span.card-avatar__subtitle= subtitle
 
-mixin page-title(title, subtitle)
+mixin page-title(title, subtitle, extraClass)
   .title-page
     h1.title-page__title= title
-    p.subtitle= subtitle
+    p.title-page__subtitle(class!=extraClass)= subtitle
 
 mixin page-title-banner(title, subtitle, src, extraClass)
   .title-page
