@@ -1,0 +1,38 @@
+.mr-foto {
+  @include section;
+  display: grid;
+  grid-template-areas:
+    "top-left top-right"
+    "middle middle"
+    "bottom-left bottom-right";
+  gap: 32px;
+
+  &__image {
+    width: 584px;
+    aspect-ratio: 584 / 513;
+    object-fit: cover;
+    object-position: center;
+
+    &_middle {
+      grid-area: middle;
+      width: 1200px;
+      aspect-ratio: 1200 / 513;
+    }
+
+    &_top-left {
+      grid-area: top-left;
+    }
+
+    &_top-right {
+      grid-area: top-right;
+    }
+
+    &_bottom-left {
+      grid-area: bottom-left;
+    }
+
+    &_bottom-right {
+      grid-area: bottom-right;
+    }
+  }
+}

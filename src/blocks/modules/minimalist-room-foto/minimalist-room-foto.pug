@@ -1,0 +1,9 @@
+mixin foto-grid(extraClass, src, title)
+  img.mr-foto__image(class!=extraClass)(src=src alt=title)
+
+section.mr-foto.page__section
+  +foto-grid('mr-foto__image_top-left', './img/page-minimalist-room/mr-interior-details_1.png', 'Interior details')
+  +foto-grid('mr-foto__image_top-right', './img/page-minimalist-room/mr-interior-details_2.png', 'Interior details')
+  +foto-grid('mr-foto__image_middle', './img/page-minimalist-room/mr-interior-details_3.png', 'Interior details')
+  +foto-grid('mr-foto__image_bottom-left', './img/page-minimalist-room/mr-interior-details_4.png', 'Interior details')
+  +foto-grid('mr-foto__image_bottom-right', './img/page-minimalist-room/mr-interior-details_5.png', 'Interior details')
