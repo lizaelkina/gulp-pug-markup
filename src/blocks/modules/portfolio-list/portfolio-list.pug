@@ -1,0 +1,32 @@
+include ../../../views/helpers/mixins
+
+mixin portfolio-title(title, subtitle)
+  h3.card__title= title
+  p.card__text= subtitle
+
+section.portfolio-list.page__section
+  +border-section('Portfolio', 'border-section__image')
+  .card
+    img.card__image(src='./img/page-portfolio/portfolio-minimalist.png' alt='Minimalist Room')
+    .card__info
+      +card-avatar('./img/card-avatar.png', 'Arga Danaan', 'CEO of Dananz', 'card-avatar__position_right')
+      +portfolio-title('Minimalist Room', 'Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.')
+      +link-button('button__primary', 'Learn More', './minimalist-room.html')
+  .card
+    .card__info
+      +card-avatar('./img/card-avatar.png', 'Arga Danaan', 'CEO of Dananz', 'card-avatar__position_left')
+      +portfolio-title('Vintage Room', 'Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.')
+      +link-button('button__primary', 'Learn More', './404.html')
+    img.card__image(src='./img/page-portfolio/portfolio-vintage.png' alt='Vintage Room')
+  .card
+    img.card__image(src='./img/page-portfolio/portfolio-modern.png' alt='Modern Room')
+    .card__info
+      +card-avatar('./img/card-avatar.png', 'Arga Danaan', 'CEO of Dananz', 'card-avatar__position_right')
+      +portfolio-title('Modern Room', 'Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.')
+      +link-button('button__primary', 'Learn More', './404.html')
+  .card
+    .card__info
+      +card-avatar('./img/card-avatar.png', 'Arga Danaan', 'CEO of Dananz', 'card-avatar__position_left')
+      +portfolio-title('Transitional Room', 'Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.')
+      +link-button('button__primary', 'Learn More', './404.html')
+    img.card__image(src='./img/page-portfolio/portfolio-transitional.png' alt='Transitional Room')

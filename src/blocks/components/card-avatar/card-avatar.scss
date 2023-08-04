@@ -1,4 +1,6 @@
 .card-avatar {
+  position: absolute;
+  top: 26px;
   max-width: 276px;
   box-sizing: border-box;
   padding: 17px 20px;
@@ -12,11 +14,11 @@
   column-gap: 20px;
 
   &__position_right {
-    margin-left: -170px;
+    right: 160px;
   }
 
   &__position_left {
-    margin-right: -170px;
+    left: 160px;
   }
 
   &__image {
