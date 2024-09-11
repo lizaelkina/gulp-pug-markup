@@ -23,7 +23,7 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
   <body class="custom-scroll">
     <div class="page">
@@ -32,16 +32,79 @@
           <ul class="menu">
                   <li><a class="menu__item menu__item_active" href="/">Home</a></li>
                   <li><a class="menu__item" href="./about-us.html">About Us</a></li>
+                  <li><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
                   <li><a class="menu__item" href="./services.html">Services</a></li>
                   <li><a class="menu__item" href="./our-teams.html">Our Teams</a></li>
           </ul><a class="button button__primary" href="./contact-us.html">Contact Us</a>
         </nav>
       </header>
       <main class="content">
-        <section class="section">
-          <p class="section__subtitle">404</p>
-          <h2 class="section__title">Page not found</h2>
-          <div class="section__container"></div><span class="section__text">Sorry, this page does not exist or is temporarily unavailable.</span><span class="section__text">You can try again later, <a href="#">go back</a>, or go to the <a href="/">main page</a>.</span>
+        <section class="contact-us__title page__section">
+                  <div class="title-page">
+                    <h1 class="title-page__title">Contact Us</h1>
+                    <p class="title-page__subtitle title-page__subtitle_contact-us">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                  </div>
+          <form class="contact-us__form" name="contact" novalidate>
+            <div class="form__name">
+              <div class="form__container">
+                <label class="form__label">First Name</label>
+                <input class="form__input" type="text" name="first-name" placeholder="First Name" required>
+              </div>
+              <div class="form__container">
+                <label class="form__label">Last Name</label>
+                <input class="form__input" type="text" name="last-name" placeholder="Last Name" required>
+              </div>
+            </div>
+            <label class="form__label">Email</label>
+            <input class="form__input" type="email" name="email" placeholder="Email" required>
+            <label class="form__label">Phone Number</label>
+            <input class="form__input" type="number" name="phone" placeholder="Phone Number" required>
+            <label class="form__label">Message</label>
+            <textarea class="form__input form__input_textarea" name="message" placeholder="Your Message" required></textarea>
+            <button class="button button__primary form__button" type="submit">Send Massage</button>
+          </form>
+        </section>
+        <section class="contact__location page__section">
+                  <div class="border-section">
+                    <h2 class="border-section__text">Location</h2>
+                    <div class="border-section__border"></div>
+                  </div>
+          <div class="contact__columns">
+            <div class="contact__column">
+              <div class="column__info">
+                <h3 class="contact__title contact__title_big">Visit Our Stores</h3>
+                <p class="contact__subtitle">Find us at these locations.</p>
+              </div>
+                      <div class="column__info column__info_small">
+                        <h3 class="contact__title">Email</h3>
+                        <p class="contact__subtitle">dananz@gmail.com</p>
+                      </div>
+                      <div class="column__info column__info_small">
+                        <h3 class="contact__title">Phone</h3>
+                        <p class="contact__subtitle">+62 815 002 1000</p>
+                      </div>
+            </div>
+            <div class="contact__column">
+                      <div class="column__info">
+                        <h3 class="contact__title">Jakarta</h3>
+                        <p class="contact__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                      </div>
+                      <div class="column__info">
+                        <h3 class="contact__title">Yogyakarta</h3>
+                        <p class="contact__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                      </div>
+            </div>
+            <div class="contact__column">
+                      <div class="column__info">
+                        <h3 class="contact__title">Surakarta</h3>
+                        <p class="contact__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                      </div>
+                      <div class="column__info">
+                        <h3 class="contact__title">Bandung</h3>
+                        <p class="contact__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                      </div>
+            </div>
+          </div>
         </section>
       </main>
       <section class="accent-banner">
@@ -60,16 +123,16 @@
           <nav class="footer__social">
             <h4 class="footer__social_heading">Follow us On</h4>
             <ul class="footer__social_list">
-                    <li><a class="icon-social" href="#"><img class="icon-social__img" src="./img/svg/icon-facebook.svg" alt="Facebook"></a></li>
-                    <li><a class="icon-social" href="#"><img class="icon-social__img" src="./img/svg/icon-instagram.svg" alt="Instagram"></a></li>
-                    <li><a class="icon-social" href="#"><img class="icon-social__img" src="./img/svg/icon-tiktok.svg" alt="Tiktok"></a></li>
-                    <li><a class="icon-social" href="#"><img class="icon-social__img" src="./img/svg/icon-youtube.svg" alt="Youtube"></a></li>
+                    <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-facebook.svg" alt="Facebook"></a></li>
+                    <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-instagram.svg" alt="Instagram"></a></li>
+                    <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-tiktok.svg" alt="Tiktok"></a></li>
+                    <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-youtube.svg" alt="Youtube"></a></li>
             </ul>
           </nav>
         </div>
       </footer>
     </div>
   </body>
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
 </html>

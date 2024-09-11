@@ -23,7 +23,7 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
   <body class="custom-scroll">
     <div class="page">
@@ -32,19 +32,63 @@
           <ul class="menu">
                   <li><a class="menu__item menu__item_active" href="/">Home</a></li>
                   <li><a class="menu__item" href="./about-us.html">About Us</a></li>
+                  <li><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
                   <li><a class="menu__item" href="./services.html">Services</a></li>
                   <li><a class="menu__item" href="./our-teams.html">Our Teams</a></li>
           </ul><a class="button button__primary" href="./contact-us.html">Contact Us</a>
         </nav>
       </header>
       <main class="content">
-              <section class="title-section">
-                <div class="page-title">
-                  <h1 class="page-title__title">About</h1>
-                  <p class="page-title__subtitle page-title__subtitle_about">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p><img class="page-title__image page-title__image_about" src="./img/about-page/about-banner.png" alt="About">
-                </div>
-              </section>
-        <!--include ../../blocks/modules/achievement-about/achievement-about-->
+        <section class="about-title page__section">
+                  <div class="title-page">
+                    <h1 class="title-page__title">About</h1>
+                    <p class="title-page__subtitle title-page__subtitle_about">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p><img class="title-page__image" src="./img/page-about-us/about-us-banner.png" alt="About">
+                  </div>
+        </section>
+        <section class="about-achievement page__section">
+                  <div class="border-section">
+                    <h2 class="border-section__text">Achievement</h2>
+                    <div class="border-section__border"></div>
+                  </div>
+          <p class="about-achievement__title">interior customization with Danaanz, best quality with professional workers</p>
+          <div class="about-achievement__container"><img class="about-achievement__image" src="./img/page-about-us/achievement-banner.png" alt="Example of our design">
+                    <div class="rectangle">
+                      <div class="rectangle__row">
+                        <p class="rectangle__title">350+</p><span class="rectangle__subtitle">Project Completed</span>
+                      </div>
+                      <div class="rectangle__row">
+                        <p class="rectangle__title">23+</p><span class="rectangle__subtitle">Professional Teams</span>
+                      </div>
+                      <div class="rectangle__row">
+                        <p class="rectangle__title">15+</p><span class="rectangle__subtitle">Years Experience</span>
+                      </div>
+                    </div>
+          </div>
+        </section>
+        <section class="shared-service page__section">
+                  <div class="border-section">
+                    <h2 class="border-section__text">Service</h2>
+                    <div class="border-section__border"></div>
+                  </div>
+                  <p class="title-section__title">Why Choose Us</p><span class="title-section__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</span>
+          <div class="shared-service__columns">
+                    <div class="shared-service__column">
+                      <div class="shared-service__icon"></div>
+                      <h3 class="shared-service__title">High Quality</h3>
+                      <p class="shared-service__text">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                    </div>
+                    <div class="shared-service__column">
+                      <div class="shared-service__icon"></div>
+                      <h3 class="shared-service__title">Professional Designer</h3>
+                      <p class="shared-service__text">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                    </div>
+                    <div class="shared-service__column">
+                      <div class="shared-service__icon"></div>
+                      <h3 class="shared-service__title">The Best Services</h3>
+                      <p class="shared-service__text">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                    </div>
+          </div>
+        </section>
       </main>
       <section class="accent-banner">
         <h3 class="accent-banner__slogan">let's discuss making your interior like a dream place!</h3><span class="accent-banner__text">Contact us below to work together to build your amazing interior</span><a class="button button__banner" href="./contact-us.html">Contact Us</a>
@@ -62,16 +106,16 @@
           <nav class="footer__social">
             <h4 class="footer__social_heading">Follow us On</h4>
             <ul class="footer__social_list">
-                    <li><a class="icon-social" href="#"><img class="icon-social__img" src="./img/svg/icon-facebook.svg" alt="Facebook"></a></li>
-                    <li><a class="icon-social" href="#"><img class="icon-social__img" src="./img/svg/icon-instagram.svg" alt="Instagram"></a></li>
-                    <li><a class="icon-social" href="#"><img class="icon-social__img" src="./img/svg/icon-tiktok.svg" alt="Tiktok"></a></li>
-                    <li><a class="icon-social" href="#"><img class="icon-social__img" src="./img/svg/icon-youtube.svg" alt="Youtube"></a></li>
+                    <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-facebook.svg" alt="Facebook"></a></li>
+                    <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-instagram.svg" alt="Instagram"></a></li>
+                    <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-tiktok.svg" alt="Tiktok"></a></li>
+                    <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-youtube.svg" alt="Youtube"></a></li>
             </ul>
           </nav>
         </div>
       </footer>
     </div>
   </body>
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
 </html>
