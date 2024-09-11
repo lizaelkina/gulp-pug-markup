@@ -1,7 +1,7 @@
 .service {
   @include section;
   min-height: 829px;
-  background-image: url("/img/page-home/service-banner.png");
+  background-image: url(../img/page-home/service-banner.png);
   background-position: right 25% bottom;
   background-repeat: no-repeat;
   background-size: 1076px 525px;
@@ -45,7 +45,7 @@
       height: 32px;
       background-position: center;
       background-size: 32px 32px;
-      background-image: url("/img/svg/icon-arrow.svg");
+      background-image: url(../img/svg/icon-arrow.svg);
       background-repeat: no-repeat;
     }
   }
