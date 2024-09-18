@@ -1,0 +1,55 @@
+.designer {
+  @include section;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 282px);
+    gap: 24px;
+  }
+
+  &__item {
+    position: relative;
+    background-color: $blue;
+  }
+
+  &__foto {
+    display: block;
+    width: 282px;
+    height: 386px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__card {
+    position: absolute;
+    top: 292px;
+    left: 12px;
+    bottom: 12px;
+    right: 12px;
+    width: 258px;
+    box-sizing: border-box;
+    padding: 18px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: $font-semibold;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  &__subtitle {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $gray;
+    text-transform: uppercase;
+  }
+}

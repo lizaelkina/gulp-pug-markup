@@ -1,0 +1,23 @@
+.achievement {
+  @include section;
+
+  &__title {
+    margin: 0 0 56px;
+    font-family: $font-semibold;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 170%;
+  }
+
+  &__container {
+    display: flex;
+    gap: 59px;
+  }
+
+  &__image {
+    width: 883px;
+    aspect-ratio: 883 / 525;
+    object-fit: cover;
+    object-position: center;
+  }
+}

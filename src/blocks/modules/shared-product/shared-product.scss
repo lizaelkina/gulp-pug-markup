@@ -1,0 +1,83 @@
+.shared-product {
+  @include section;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    max-width: 337px;
+    font-family: $font-semibold;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 170%;
+  }
+
+  &__text {
+    display: block;
+    max-width: 473px;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: $gray;
+  }
+
+  &__list {
+    margin-top: 73px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+  }
+
+  &__item {
+    font-family: $font-semibold;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+  }
+
+  &__container-item {
+    cursor: pointer;
+    color: $black50;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 40px 1fr 32px;
+    grid-template-areas:
+      "number grow arrow"
+      ". text text";
+    column-gap: 80px;
+    row-gap: 24px;
+
+    &_number {
+      grid-area: number;
+      display: block;
+    }
+
+    &_grow {
+      grid-area: grow;
+    }
+
+    &_arrow {
+      grid-area: arrow;
+      background-position: center;
+      background-size: 32px 32px;
+      background-image: url(../img/svg/icon-arrow.svg);
+      background-repeat: no-repeat;
+    }
+
+    &_text {
+      grid-area: text;
+      display: block;
+      max-width: 469px;
+      font-family: $font-primary;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 160%;
+    }
+  }
+}

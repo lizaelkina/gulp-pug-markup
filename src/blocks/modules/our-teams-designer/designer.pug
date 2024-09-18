@@ -1,0 +1,19 @@
+mixin designer-foto(src, title, subtitle)
+  li.designer__item
+    img(src=src alt=title).designer__foto
+    .designer__card
+      .designer__title= title
+      .designer__subtitle= subtitle
+
+section.designer.page__section
+  +border-section('Designer')
+  +heading('Creative Person', 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.', 'heading__subtitle_image')
+  ul.designer__list
+    +designer-foto('./img/page-our-teams/our-teams_1.png', 'Shoo Phar Dhie', 'Ceo')
+    +designer-foto('./img/page-our-teams/our-teams_2.png', 'Shoo Phar Dhie', 'Ceo')
+    +designer-foto('./img/page-our-teams/our-teams_3.png', 'Shoo Phar Dhie', 'Ceo')
+    +designer-foto('./img/page-our-teams/our-teams_4.png', 'Shoo Phar Dhie', 'Ceo')
+    +designer-foto('./img/page-our-teams/our-teams_5.png', 'Shoo Phar Dhie', 'Ceo')
+    +designer-foto('./img/page-our-teams/our-teams_6.png', 'Shoo Phar Dhie', 'Ceo')
+    +designer-foto('./img/page-our-teams/our-teams_7.png', 'Shoo Phar Dhie', 'Ceo')
+    +designer-foto('./img/page-our-teams/our-teams_8.png', 'Shoo Phar Dhie', 'Ceo')
