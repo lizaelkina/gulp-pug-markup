@@ -8,13 +8,13 @@ footer.footer.page__footer
     include ../../components/logo/logo
     h3.slogan one of the best furniture agency.
   .footer__column.footer__column_info
-    form.footer__form(name='subscription', novalidate)
-      label.footer__form_label Enter your email to get the latest news
-      input.footer__form_input(type='email' name='email' placeholder='Email Address')
-      button.footer__form_btn(type='submit' aria-label='Subscribe to the newsletter')
-    nav.footer__social
-      h4.footer__social_heading Follow us On
-      ul.footer__social_list
+    form.footer-form(name='subscription', novalidate)
+      label.footer-form__label Enter your email to get the latest news
+      input.footer-form__input(type='email' name='email' placeholder='Email Address')
+      button.footer-form__btn(type='submit' aria-label='Subscribe to the newsletter')
+    nav.footer-social
+      h4.footer-social__heading Follow us On
+      ul.footer-social__list
         +icon('./img/svg/icon-facebook.svg', 'Facebook', './404.html')
         +icon('./img/svg/icon-instagram.svg', 'Instagram', './404.html')
         +icon('./img/svg/icon-tiktok.svg', 'Tiktok', './404.html')

@@ -23,7 +23,7 @@
       display: flex;
       gap: 40px;
 
-      .footer__form {
+      .footer-form {
         position: relative;
         padding-bottom: 15px;
         border-bottom: 1px solid $black70;
@@ -31,7 +31,7 @@
         flex-direction: column;
         gap: 23px;
 
-        &_label {
+        &__label {
           padding-left: 24px;
           font-family: $font-primary;
           font-weight: 400;
@@ -43,7 +43,7 @@
           background-repeat: no-repeat;
         }
 
-        &_input {
+        &__input {
           width: 85%;
           border: 0;
           background-color: transparent;
@@ -53,11 +53,11 @@
           line-height: 160%;
         }
 
-        &_input:focus {
+        &__input:focus {
           outline-color: $black30;
         }
 
-        &_input::placeholder {
+        &__input::placeholder {
           font-family: $font-primary;
           font-weight: 400;
           font-size: 18px;
@@ -65,7 +65,7 @@
           color: $lightgray;
         }
 
-        &_btn {
+        &__btn {
           position: absolute;
           bottom: 25px;
           right: 0;
@@ -80,20 +80,20 @@
         }
       }
 
-      .footer__social {
+      .footer-social {
         margin-left: auto;
         display: flex;
         flex-direction: column;
         gap: 10px;
 
-        &_heading {
+        &__heading {
           font-family: $font-primary;
           font-weight: 400;
           font-size: 16px;
           line-height: 160%;
         }
 
-        &_list {
+        &__list {
           list-style: none;
           display: flex;
           gap: 20px;
