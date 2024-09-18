@@ -1,47 +1,47 @@
-.contact__location {
+.location {
   @include section;
-}
 
-.contact__columns {
-  display: flex;
-  justify-content: space-between;
-  gap: 60px;
-}
-
-.contact__column {
-  max-width: 334px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.column__info {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-
-  &_small {
-    gap: 10px;
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
   }
-}
 
-.contact__title {
-  font-family: $font-semibold;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 140%;
-
-  &_big {
-    font-size: 34px;
-    line-height: 170%;
+  &__column {
+    max-width: 334px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
-}
 
-.contact__subtitle {
-  margin: 0;
-  font-family: $font-primary;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 160%;
-  color: $gray;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &_small {
+      gap: 10px;
+    }
+  }
+
+  &__title {
+    font-family: $font-semibold;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+
+    &_big {
+      font-size: 34px;
+      line-height: 170%;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: $gray;
+  }
 }

@@ -1,22 +1,22 @@
 include ../../../views/helpers/mixins
 
-mixin column-info(title, subtitle)
-  .column__info&attributes(attributes)
-    h3.contact__title= title
-    p.contact__subtitle= subtitle
+mixin column-text(title, subtitle)
+  .location__text&attributes(attributes)
+    h3.location__title= title
+    p.location__subtitle= subtitle
 
-section.contact__location.page__section
+section.location.page__section
   +border-section('Location')
-  .contact__columns
-    .contact__column
-      .column__info
-        h3.contact__title.contact__title_big Visit Our Stores
-        p.contact__subtitle Find us at these locations.
-      +column-info('Email', 'dananz@gmail.com').column__info_small
-      +column-info('Phone', '+62 815 002 1000').column__info_small
-    .contact__column
-      +column-info('Jakarta', 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.')
-      +column-info('Yogyakarta', 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.')
-    .contact__column
-      +column-info('Surakarta', 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.')
-      +column-info('Bandung', 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.')
+  .location__columns
+    .location__column
+      .location__text
+        h3.location__title.location__title_big Visit Our Stores
+        p.location__subtitle Find us at these locations.
+      +column-text('Email', 'dananz@gmail.com').location__text_small
+      +column-text('Phone', '+62 815 002 1000').location__text_small
+    .location__column
+      +column-text('Jakarta', 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.')
+      +column-text('Yogyakarta', 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.')
+    .location__column
+      +column-text('Surakarta', 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.')
+      +column-text('Bandung', 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.')
