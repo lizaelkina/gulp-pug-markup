@@ -1,0 +1,28 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__title {
+    margin: 0;
+    font-family: $font-semibold;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 170%;
+  }
+
+  &__subtitle {
+    display: block;
+    margin-bottom: 40px;
+    max-width: 471px;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: $gray;
+
+    &_image {
+      margin-bottom: 80px;
+    }
+  }
+}

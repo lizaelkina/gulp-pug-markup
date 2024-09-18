@@ -35,6 +35,7 @@ mixin page-title-banner(title, subtitle, src, extraClass)
     p.title-page__subtitle(class!=extraClass)= subtitle
     img.title-page__image(src=src alt=title)
 
-mixin section-title(title, subtitle, extraClass)
-  p.title-section__title= title
-  span.title-section__subtitle(class!=extraClass)= subtitle
+mixin heading(title, subtitle, extraClass)
+  .heading
+    p.heading__title= title
+    span.heading__subtitle(class!=extraClass)= subtitle
