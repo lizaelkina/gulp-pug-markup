@@ -16,7 +16,7 @@
     line-height: 170%;
   }
 
-  &__text {
+  &__subtitle {
     display: block;
     max-width: 473px;
     font-family: $font-primary;
@@ -41,7 +41,7 @@
     line-height: 140%;
   }
 
-  &__container-item {
+  &__wrap {
     cursor: pointer;
     color: $black50;
     text-decoration: none;
@@ -52,32 +52,32 @@
       ". text text";
     column-gap: 80px;
     row-gap: 24px;
+  }
 
-    &_number {
-      grid-area: number;
-      display: block;
-    }
+  &__number {
+    grid-area: number;
+    display: block;
+  }
 
-    &_grow {
-      grid-area: grow;
-    }
+  &__grow {
+    grid-area: grow;
+  }
 
-    &_arrow {
-      grid-area: arrow;
-      background-position: center;
-      background-size: 32px 32px;
-      background-image: url(../img/svg/icon-arrow.svg);
-      background-repeat: no-repeat;
-    }
+  &__arrow {
+    grid-area: arrow;
+    background-position: center;
+    background-size: 32px 32px;
+    background-image: url(../img/svg/icon-arrow.svg);
+    background-repeat: no-repeat;
+  }
 
-    &_text {
-      grid-area: text;
-      display: block;
-      max-width: 469px;
-      font-family: $font-primary;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 160%;
-    }
+  &__text {
+    grid-area: text;
+    display: block;
+    max-width: 469px;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
   }
 }

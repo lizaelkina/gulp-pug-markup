@@ -2,13 +2,13 @@ include ../../../views/helpers/mixins
 
 mixin menu(title, url)
   li
-    a.menu__item(href=url class!=attributes.class)= title
+    a.menu__item&attributes(attributes)(href=url)= title
 
 header.header.page__header
   include ../../components/logo/logo
   nav.header__links
     ul.menu
-      +menu('Home', '/')(class='menu__item_active')
+      +menu('Home', '/').menu__item_active
       +menu('About Us', './about-us.html')
       +menu('Portfolio', './portfolio.html')
       +menu('Services', './services.html')

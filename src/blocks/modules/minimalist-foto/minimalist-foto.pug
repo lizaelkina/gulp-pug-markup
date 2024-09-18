@@ -1,11 +1,11 @@
 include ../../../views/helpers/mixins
 
-mixin foto-grid(extraClass, src, title)
-  img.mr-foto__image(class!=extraClass)(src=src alt=title)
+mixin foto-grid(src, title)
+  img.m-foto__image&attributes(attributes)(src=src alt=title)
 
-section.mr-foto.page__section
-  +foto-grid('mr-foto__image_top-left', './img/page-minimalist-room/mr-interior-details_1.png', 'Interior details')
-  +foto-grid('mr-foto__image_top-right', './img/page-minimalist-room/mr-interior-details_2.png', 'Interior details')
-  +foto-grid('mr-foto__image_middle', './img/page-minimalist-room/mr-interior-details_3.png', 'Interior details')
-  +foto-grid('mr-foto__image_bottom-left', './img/page-minimalist-room/mr-interior-details_4.png', 'Interior details')
-  +foto-grid('mr-foto__image_bottom-right', './img/page-minimalist-room/mr-interior-details_5.png', 'Interior details')
+section.m-foto.page__section
+  +foto-grid('./img/page-minimalist-room/mr-interior-details_1.png', 'Interior details').m-foto__image_top-left
+  +foto-grid('./img/page-minimalist-room/mr-interior-details_2.png', 'Interior details').m-foto__image_top-right
+  +foto-grid('./img/page-minimalist-room/mr-interior-details_3.png', 'Interior details').m-foto__image_middle
+  +foto-grid('./img/page-minimalist-room/mr-interior-details_4.png', 'Interior details').m-foto__image_bottom-left
+  +foto-grid('./img/page-minimalist-room/mr-interior-details_5.png', 'Interior details').m-foto__image_bottom-right
