@@ -8,9 +8,14 @@ footer.footer.page__footer
     include ../../components/logo/logo
     h3.slogan one of the best furniture agency.
   .footer__column.footer__column_info
-    form.footer-form(name='subscription', novalidate)
-      label.footer-form__label Enter your email to get the latest news
-      input.footer-form__input(type='email' name='email' placeholder='Email Address')
+    form.footer-form(name='subscription')
+      label.footer-form__label(for='footerEmail') Enter your email to get the latest news
+      input#footerEmail.footer-form__input(
+        required
+        type='email'
+        name='email'
+        autocomplete='off'
+        placeholder='Email Address')
       button.footer-form__btn(type='submit' aria-label='Subscribe to the newsletter')
     nav.footer-social
       h4.footer-social__heading Follow us On

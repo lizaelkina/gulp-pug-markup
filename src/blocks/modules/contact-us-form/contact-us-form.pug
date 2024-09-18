@@ -2,18 +2,4 @@ include ../../../views/helpers/mixins
 
 section.contact-us__title.page__section
   +page-heading('Contact Us', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', 'page-heading__subtitle_contact-us')
-  form.contact-us__form(name='contact', novalidate)
-    .form__name
-      .form__container
-        label.form__label First Name
-        input.form__input(type='text' name='first-name' placeholder='First Name' required)
-      .form__container
-        label.form__label Last Name
-        input.form__input(type='text' name='last-name' placeholder='Last Name' required)
-    label.form__label Email
-    input.form__input(type='email' name='email' placeholder='Email' required)
-    label.form__label Phone Number
-    input.form__input(type='number' name='phone' placeholder='Phone Number' required)
-    label.form__label Message
-    textarea.form__input.form__input_textarea(name='message' placeholder='Your Message' required)
-    button.button.button_primary.form__button(type='submit') Send Massage
+  include ../form/form

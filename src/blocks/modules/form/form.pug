@@ -1,0 +1,34 @@
+form.form(name='contact')
+  .form__name
+    .form__container
+      label.form__label(for='name') First Name
+      input#name.form__input(
+        required
+        type='text'
+        name='first-name'
+        placeholder='First Name')
+    .form__container
+      label.form__label(for='lastName') Last Name
+      input#lastName.form__input(
+        required
+        type='text'
+        name='last-name'
+        placeholder='Last Name')
+  label.form__label(for='email') Email
+  input#email.form__input(
+    required
+    type='email'
+    name='email'
+    placeholder='Email')
+  label.form__label(for='phone') Phone Number
+  input#phone.form__input(
+    required
+    type='number'
+    name='phone'
+    placeholder='Phone Number')
+  label.form__label Message
+  textarea.form__input.form__input_textarea(
+    name='message'
+    placeholder='Your Message'
+    required)
+  button.button.button_primary.form__button(type='submit') Send Massage
