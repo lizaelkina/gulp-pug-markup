@@ -15,19 +15,19 @@
   line-height: 150%;
   transition: opacity .3s ease;
 
-  &__primary {
+  &_primary {
     background-color: $blue;
     color: $white;
   }
 
-  &__banner {
+  &_banner {
     grid-area: button;
     background-color: $white;
     color: $black50;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  &__secondary {
+  &_secondary {
     max-width: 159px;
     padding: 13px 31px;
     background-color: $white;
