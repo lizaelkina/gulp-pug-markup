@@ -30,23 +30,23 @@
     text-decoration: none;
     display: flex;
     gap: 40px;
+  }
 
-    &_number {
-      min-width: 30px;
-      display: block;
-    }
+  &__number {
+    min-width: 30px;
+    display: block;
+  }
 
-    &_grow {
-      flex: 1;
-    }
+  &__grow {
+    flex: 1;
+  }
 
-    &_arrow {
-      width: 32px;
-      height: 32px;
-      background-position: center;
-      background-size: 32px 32px;
-      background-image: url(../img/svg/icon-arrow.svg);
-      background-repeat: no-repeat;
-    }
+  &__arrow {
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-size: 32px 32px;
+    background-image: url(../img/svg/icon-arrow.svg);
+    background-repeat: no-repeat;
   }
 }

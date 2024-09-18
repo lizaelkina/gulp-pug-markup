@@ -45,30 +45,29 @@
       "fist second"
       "fist third";
     gap: 40px;
+  }
 
-    &_fist {
+  &__image {
+    object-fit: cover;
+    object-position: center;
+
+    &_type_fist {
       grid-area: fist;
       align-self: end;
       width: 342px;
       height: 392px;
-      object-fit: cover;
-      object-position: center;
     }
 
-    &_second {
+    &_type_second {
       grid-area: second;
       width: 241px;
       height: 225px;
-      object-fit: cover;
-      object-position: center;
     }
 
-    &_third {
+    &_type_third {
       grid-area: third;
       width: 195px;
       height: 178px;
-      object-fit: cover;
-      object-position: center;
     }
   }
 }
