@@ -25,7 +25,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="stylesheet" href="styles/main.min.css">
   </head>
-  <body class="custom-scroll">
+  <body class="root">
     <div class="page">
       <header class="header page__header"><a href="https://lizaelkina.github.io/gulp-pug-markup/"><img class="logo" src="./img/svg/logo.svg" alt="Логотип"></a>
         <nav class="header__links">
@@ -35,27 +35,27 @@
                   <li><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
                   <li><a class="menu__item" href="./services.html">Services</a></li>
                   <li><a class="menu__item" href="./our-teams.html">Our Teams</a></li>
-          </ul><a class="button button__primary" href="./contact-us.html">Contact Us</a>
+          </ul><a class="button button_primary" href="./contact-us.html">Contact Us</a>
         </nav>
       </header>
       <main class="content">
-        <section class="main-banner page__section">
-          <div class="main-banner__container">
-            <h1 class="main-banner__title">Design your interior with high quality.</h1>
-            <div class="main-banner__side-text"><span>ALL RIGHT RESERVED</span><span>2022</span></div>
+        <section class="intro page__section">
+          <div class="intro__container">
+            <h1 class="intro__title">Design your interior with high quality.</h1>
+            <div class="intro__side-text"><span>ALL RIGHT RESERVED</span><span>2022</span></div>
           </div>
-          <div class="main-banner__border"></div><img class="main-banner__image" src="./img/page-home/main-banner.png" alt="Example of our design">
-                <div class="rectangle rectangle__position_absolute">
-                  <div class="rectangle__row">
-                    <p class="rectangle__title">350+</p><span class="rectangle__subtitle">Project Completed</span>
+          <div class="intro__border"></div><img class="intro__image" src="./img/page-home/main-banner.png" alt="Example of our design">
+                  <div class="rectangle rectangle_position_absolute">
+                    <div class="rectangle__row">
+                      <p class="rectangle__title">350+</p><span class="rectangle__subtitle">Project Completed</span>
+                    </div>
+                    <div class="rectangle__row">
+                      <p class="rectangle__title">23+</p><span class="rectangle__subtitle">Professional Teams</span>
+                    </div>
+                    <div class="rectangle__row">
+                      <p class="rectangle__title">15+</p><span class="rectangle__subtitle">Years Experience</span>
+                    </div>
                   </div>
-                  <div class="rectangle__row">
-                    <p class="rectangle__title">23+</p><span class="rectangle__subtitle">Professional Teams</span>
-                  </div>
-                  <div class="rectangle__row">
-                    <p class="rectangle__title">15+</p><span class="rectangle__subtitle">Years Experience</span>
-                  </div>
-                </div>
         </section>
         <section class="about page__section">
                   <div class="border-section">
@@ -65,10 +65,10 @@
           <blockquote class="about__blockquote">"We're one of the best furniture agency. Prioritizing customers and making purchases easy are the hallmarks of our agency."</blockquote>
           <div class="card"><img class="card__image" src="./img/page-home/about-banner.png" alt="Example of our design">
             <div class="card__info">
-                      <div class="card-avatar card-avatar__position_right"><img class="card-avatar__image" src="./img/card-avatar.png" alt="Arga Danaan">
+                      <div class="card-avatar card-avatar_position_right"><img class="card-avatar__image" src="./img/card-avatar.png" alt="Arga Danaan">
                         <p class="card-avatar__title">Arga Danaan</p><span class="card-avatar__subtitle">CEO of Dananz</span>
                       </div>
-              <p class="card__text">Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.</p><a class="button button__primary" href="./our-teams.html">Learn More</a>
+              <p class="card__text">Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.</p><a class="button button_primary" href="./our-teams.html">Learn More</a>
             </div>
           </div>
         </section>
@@ -77,14 +77,16 @@
                     <h2 class="border-section__text">Service</h2>
                     <div class="border-section__border"></div>
                   </div>
-                  <p class="title-section__title">attractive furniture with the best quality.</p><span class="title-section__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</span>
+                  <div class="heading">
+                    <p class="heading__title">attractive furniture with the best quality.</p><span class="heading__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</span>
+                  </div>
           <ul class="service__list">
-                    <li class="service__item"><a class="service__container" href="./services.html"><span class="service__container_number">01</span><span class="service__container_grow">Interior Design</span>
-                        <div class="service__container_arrow"></div></a></li>
-                    <li class="service__item"><a class="service__container" href="./services.html"><span class="service__container_number">02</span><span class="service__container_grow">Consultant</span>
-                        <div class="service__container_arrow"></div></a></li>
-                    <li class="service__item"><a class="service__container" href="./services.html"><span class="service__container_number">03</span><span class="service__container_grow">Construction Consultant</span>
-                        <div class="service__container_arrow"></div></a></li>
+                    <li class="service__item"><a class="service__container" href="./services.html"><span class="service__number">01</span><span class="service__grow">Interior Design</span>
+                        <div class="service__arrow"></div></a></li>
+                    <li class="service__item"><a class="service__container" href="./services.html"><span class="service__number">02</span><span class="service__grow">Consultant</span>
+                        <div class="service__arrow"></div></a></li>
+                    <li class="service__item"><a class="service__container" href="./services.html"><span class="service__number">03</span><span class="service__grow">Construction Consultant</span>
+                        <div class="service__arrow"></div></a></li>
           </ul>
         </section>
         <section class="product page__section">
@@ -93,17 +95,17 @@
                     <div class="border-section__border"></div>
                   </div>
           <div class="product__container">
-            <p class="product__title">Choose your product themes.</p><span class="product__text">Find the theme you want. If our choice of theme is not what you want, you can customize it as you want.</span>
+            <p class="product__title">Choose your product themes.</p><span class="product__subtitle">Find the theme you want. If our choice of theme is not what you want, you can customize it as you want.</span>
           </div>
           <ul class="product__list">
-                    <li class="product__item"><a class="product__container-item" href="./404.html"><span class="product__container-item_number">01</span><span class="product__container-item_grow">Vintage</span>
-                        <div class="product__container-item_arrow"></div><span class="product__container-item_text">the use of simple and limited elements to get the best effect or impression.</span></a></li>
-                    <li class="product__item"><a class="product__container-item" href="./minimalist-room.html"><span class="product__container-item_number">02</span><span class="product__container-item_grow">Minimalist</span>
-                        <div class="product__container-item_arrow"></div><span class="product__container-item_text">the use of simple and limited elements to get the best effect or impression.</span></a></li>
-                    <li class="product__item"><a class="product__container-item" href="./404.html"><span class="product__container-item_number">03</span><span class="product__container-item_grow">Modern</span>
-                        <div class="product__container-item_arrow"></div><span class="product__container-item_text">the use of simple and limited elements to get the best effect or impression.</span></a></li>
-                    <li class="product__item"><a class="product__container-item" href="./404.html"><span class="product__container-item_number">04</span><span class="product__container-item_grow">Transitional</span>
-                        <div class="product__container-item_arrow"></div><span class="product__container-item_text">the use of simple and limited elements to get the best effect or impression.</span></a></li>
+                    <li class="product__item"><a class="product__wrap" href="./404.html"><span class="product__number">01</span><span class="product__grow">Vintage</span>
+                        <div class="product__arrow"></div><span class="product__text">the use of simple and limited elements to get the best effect or impression.</span></a></li>
+                    <li class="product__item"><a class="product__wrap" href="./minimalist-room.html"><span class="product__number">02</span><span class="product__grow">Minimalist</span>
+                        <div class="product__arrow"></div><span class="product__text">the use of simple and limited elements to get the best effect or impression.</span></a></li>
+                    <li class="product__item"><a class="product__wrap" href="./404.html"><span class="product__number">03</span><span class="product__grow">Modern</span>
+                        <div class="product__arrow"></div><span class="product__text">the use of simple and limited elements to get the best effect or impression.</span></a></li>
+                    <li class="product__item"><a class="product__wrap" href="./404.html"><span class="product__number">04</span><span class="product__grow">Transitional</span>
+                        <div class="product__arrow"></div><span class="product__text">the use of simple and limited elements to get the best effect or impression.</span></a></li>
           </ul>
         </section>
         <section class="material page__section">
@@ -113,28 +115,28 @@
                   </div>
           <div class="material__container">
             <div class="material__info">
-              <p class="material__title">choice of materials for quality furniture.</p><span class="material__text">You can custom the material as desired. And our furniture uses the best materials and selected quality materials.</span><a class="button button__secondary" href="./404.html">See Materials</a>
+              <p class="material__title">choice of materials for quality furniture.</p><span class="material__text">You can custom the material as desired. And our furniture uses the best materials and selected quality materials.</span><a class="button button_secondary" href="./404.html">See Materials</a>
             </div>
-            <div class="material__images"><img class="material__images_fist" src="./img/page-home/material-img-1.png" alt="Wood"><img class="material__images_second" src="./img/page-home/material-img-2.png" alt="Epoxy"><img class="material__images_third" src="./img/page-home/material-img-3.png" alt="Stone"></div>
+            <div class="material__images"><img class="material__image material__image_type_fist" src="./img/page-home/material-img-1.png" alt="Wood"><img class="material__image material__image_type_second" src="./img/page-home/material-img-2.png" alt="Epoxy"><img class="material__image material__image_type_third" src="./img/page-home/material-img-3.png" alt="Stone"></div>
           </div>
         </section>
       </main>
-      <section class="accent-banner">
-        <h3 class="accent-banner__slogan">let's discuss making your interior like a dream place!</h3><span class="accent-banner__text">Contact us below to work together to build your amazing interior</span><a class="button button__banner" href="./contact-us.html">Contact Us</a>
+      <section class="accent">
+        <h3 class="accent__slogan">let's discuss making your interior like a dream place!</h3><span class="accent__text">Contact us below to work together to build your amazing interior</span><a class="button button_banner" href="./contact-us.html">Contact Us</a>
       </section>
       <footer class="footer page__footer">
         <div class="footer__column footer__column_logo"><a href="https://lizaelkina.github.io/gulp-pug-markup/"><img class="logo" src="./img/svg/logo.svg" alt="Логотип"></a>
           <h3 class="slogan">one of the best furniture agency.</h3>
         </div>
         <div class="footer__column footer__column_info">
-          <form class="footer__form" name="subscription" novalidate>
-            <label class="footer__form_label">Enter your email to get the latest news</label>
-            <input class="footer__form_input" type="email" name="email" placeholder="Email Address">
-            <button class="footer__form_btn" type="submit" aria-label="Subscribe to the newsletter"></button>
+          <form class="footer-form" name="subscription">
+            <label class="footer-form__label" for="footerEmail">Enter your email to get the latest news</label>
+            <input class="footer-form__input" id="footerEmail" required type="email" name="email" autocomplete="off" placeholder="Email Address">
+            <button class="footer-form__btn" type="submit" aria-label="Subscribe to the newsletter"></button>
           </form>
-          <nav class="footer__social">
-            <h4 class="footer__social_heading">Follow us On</h4>
-            <ul class="footer__social_list">
+          <nav class="footer-social">
+            <h4 class="footer-social__heading">Follow us On</h4>
+            <ul class="footer-social__list">
                     <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-facebook.svg" alt="Facebook"></a></li>
                     <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-instagram.svg" alt="Instagram"></a></li>
                     <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-tiktok.svg" alt="Tiktok"></a></li>

@@ -25,7 +25,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="stylesheet" href="styles/main.min.css">
   </head>
-  <body class="custom-scroll">
+  <body class="root">
     <div class="page">
       <header class="header page__header"><a href="https://lizaelkina.github.io/gulp-pug-markup/"><img class="logo" src="./img/svg/logo.svg" alt="Логотип"></a>
         <nav class="header__links">
@@ -35,94 +35,94 @@
                   <li><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
                   <li><a class="menu__item" href="./services.html">Services</a></li>
                   <li><a class="menu__item" href="./our-teams.html">Our Teams</a></li>
-          </ul><a class="button button__primary" href="./contact-us.html">Contact Us</a>
+          </ul><a class="button button_primary" href="./contact-us.html">Contact Us</a>
         </nav>
       </header>
       <main class="content">
-        <section class="contact-us__title page__section">
-                  <div class="title-page">
-                    <h1 class="title-page__title">Contact Us</h1>
-                    <p class="title-page__subtitle title-page__subtitle_contact-us">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        <section class="contact page__section">
+                  <div class="page-heading">
+                    <h1 class="page-heading__title">Contact Us</h1>
+                    <p class="page-heading__subtitle page-heading__subtitle_contact-us">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                   </div>
-          <form class="contact-us__form" name="contact" novalidate>
+          <form class="form" name="contact">
             <div class="form__name">
               <div class="form__container">
-                <label class="form__label">First Name</label>
-                <input class="form__input" type="text" name="first-name" placeholder="First Name" required>
+                <label class="form__label" for="name">First Name</label>
+                <input class="form__input" id="name" required type="text" name="first-name" placeholder="First Name">
               </div>
               <div class="form__container">
-                <label class="form__label">Last Name</label>
-                <input class="form__input" type="text" name="last-name" placeholder="Last Name" required>
+                <label class="form__label" for="lastName">Last Name</label>
+                <input class="form__input" id="lastName" required type="text" name="last-name" placeholder="Last Name">
               </div>
             </div>
-            <label class="form__label">Email</label>
-            <input class="form__input" type="email" name="email" placeholder="Email" required>
-            <label class="form__label">Phone Number</label>
-            <input class="form__input" type="number" name="phone" placeholder="Phone Number" required>
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" id="email" required type="email" name="email" placeholder="Email">
+            <label class="form__label" for="phone">Phone Number</label>
+            <input class="form__input" id="phone" required type="number" name="phone" placeholder="Phone Number">
             <label class="form__label">Message</label>
             <textarea class="form__input form__input_textarea" name="message" placeholder="Your Message" required></textarea>
-            <button class="button button__primary form__button" type="submit">Send Massage</button>
+            <button class="button button_primary form__button" type="submit">Send Massage</button>
           </form>
         </section>
-        <section class="contact__location page__section">
+        <section class="location page__section">
                   <div class="border-section">
                     <h2 class="border-section__text">Location</h2>
                     <div class="border-section__border"></div>
                   </div>
-          <div class="contact__columns">
-            <div class="contact__column">
-              <div class="column__info">
-                <h3 class="contact__title contact__title_big">Visit Our Stores</h3>
-                <p class="contact__subtitle">Find us at these locations.</p>
+          <div class="location__columns">
+            <div class="location__column">
+              <div class="location__text">
+                <h3 class="location__title location__title_big">Visit Our Stores</h3>
+                <p class="location__subtitle">Find us at these locations.</p>
               </div>
-                      <div class="column__info column__info_small">
-                        <h3 class="contact__title">Email</h3>
-                        <p class="contact__subtitle">dananz@gmail.com</p>
+                      <div class="location__text location__text_small">
+                        <h3 class="location__title">Email</h3>
+                        <p class="location__subtitle">dananz@gmail.com</p>
                       </div>
-                      <div class="column__info column__info_small">
-                        <h3 class="contact__title">Phone</h3>
-                        <p class="contact__subtitle">+62 815 002 1000</p>
-                      </div>
-            </div>
-            <div class="contact__column">
-                      <div class="column__info">
-                        <h3 class="contact__title">Jakarta</h3>
-                        <p class="contact__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
-                      </div>
-                      <div class="column__info">
-                        <h3 class="contact__title">Yogyakarta</h3>
-                        <p class="contact__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                      <div class="location__text location__text_small">
+                        <h3 class="location__title">Phone</h3>
+                        <p class="location__subtitle">+62 815 002 1000</p>
                       </div>
             </div>
-            <div class="contact__column">
-                      <div class="column__info">
-                        <h3 class="contact__title">Surakarta</h3>
-                        <p class="contact__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+            <div class="location__column">
+                      <div class="location__text">
+                        <h3 class="location__title">Jakarta</h3>
+                        <p class="location__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
                       </div>
-                      <div class="column__info">
-                        <h3 class="contact__title">Bandung</h3>
-                        <p class="contact__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                      <div class="location__text">
+                        <h3 class="location__title">Yogyakarta</h3>
+                        <p class="location__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                      </div>
+            </div>
+            <div class="location__column">
+                      <div class="location__text">
+                        <h3 class="location__title">Surakarta</h3>
+                        <p class="location__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                      </div>
+                      <div class="location__text">
+                        <h3 class="location__title">Bandung</h3>
+                        <p class="location__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
                       </div>
             </div>
           </div>
         </section>
       </main>
-      <section class="accent-banner">
-        <h3 class="accent-banner__slogan">let's discuss making your interior like a dream place!</h3><span class="accent-banner__text">Contact us below to work together to build your amazing interior</span><a class="button button__banner" href="./contact-us.html">Contact Us</a>
+      <section class="accent">
+        <h3 class="accent__slogan">let's discuss making your interior like a dream place!</h3><span class="accent__text">Contact us below to work together to build your amazing interior</span><a class="button button_banner" href="./contact-us.html">Contact Us</a>
       </section>
       <footer class="footer page__footer">
         <div class="footer__column footer__column_logo"><a href="https://lizaelkina.github.io/gulp-pug-markup/"><img class="logo" src="./img/svg/logo.svg" alt="Логотип"></a>
           <h3 class="slogan">one of the best furniture agency.</h3>
         </div>
         <div class="footer__column footer__column_info">
-          <form class="footer__form" name="subscription" novalidate>
-            <label class="footer__form_label">Enter your email to get the latest news</label>
-            <input class="footer__form_input" type="email" name="email" placeholder="Email Address">
-            <button class="footer__form_btn" type="submit" aria-label="Subscribe to the newsletter"></button>
+          <form class="footer-form" name="subscription">
+            <label class="footer-form__label" for="footerEmail">Enter your email to get the latest news</label>
+            <input class="footer-form__input" id="footerEmail" required type="email" name="email" autocomplete="off" placeholder="Email Address">
+            <button class="footer-form__btn" type="submit" aria-label="Subscribe to the newsletter"></button>
           </form>
-          <nav class="footer__social">
-            <h4 class="footer__social_heading">Follow us On</h4>
-            <ul class="footer__social_list">
+          <nav class="footer-social">
+            <h4 class="footer-social__heading">Follow us On</h4>
+            <ul class="footer-social__list">
                     <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-facebook.svg" alt="Facebook"></a></li>
                     <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-instagram.svg" alt="Instagram"></a></li>
                     <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-tiktok.svg" alt="Tiktok"></a></li>

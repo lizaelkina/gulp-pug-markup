@@ -25,7 +25,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="stylesheet" href="styles/main.min.css">
   </head>
-  <body class="custom-scroll">
+  <body class="root">
     <div class="page">
       <header class="header page__header"><a href="https://lizaelkina.github.io/gulp-pug-markup/"><img class="logo" src="./img/svg/logo.svg" alt="Логотип"></a>
         <nav class="header__links">
@@ -35,23 +35,23 @@
                   <li><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
                   <li><a class="menu__item" href="./services.html">Services</a></li>
                   <li><a class="menu__item" href="./our-teams.html">Our Teams</a></li>
-          </ul><a class="button button__primary" href="./contact-us.html">Contact Us</a>
+          </ul><a class="button button_primary" href="./contact-us.html">Contact Us</a>
         </nav>
       </header>
       <main class="content">
-        <section class="about-title page__section">
-                  <div class="title-page">
-                    <h1 class="title-page__title">About</h1>
-                    <p class="title-page__subtitle title-page__subtitle_about">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p><img class="title-page__image" src="./img/page-about-us/about-us-banner.png" alt="About">
+        <section class="about page__section">
+                  <div class="page-heading">
+                    <h1 class="page-heading__title">About</h1>
+                    <p class="page-heading__subtitle page-heading__subtitle_about">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p><img class="page-heading__image" src="./img/page-about-us/about-us-banner.png" alt="About">
                   </div>
         </section>
-        <section class="about-achievement page__section">
+        <section class="achievement page__section">
                   <div class="border-section">
                     <h2 class="border-section__text">Achievement</h2>
                     <div class="border-section__border"></div>
                   </div>
-          <p class="about-achievement__title">interior customization with Danaanz, best quality with professional workers</p>
-          <div class="about-achievement__container"><img class="about-achievement__image" src="./img/page-about-us/achievement-banner.png" alt="Example of our design">
+          <p class="achievement__title">interior customization with Danaanz, best quality with professional workers</p>
+          <div class="achievement__container"><img class="achievement__image" src="./img/page-about-us/achievement-banner.png" alt="Example of our design">
                     <div class="rectangle">
                       <div class="rectangle__row">
                         <p class="rectangle__title">350+</p><span class="rectangle__subtitle">Project Completed</span>
@@ -70,7 +70,9 @@
                     <h2 class="border-section__text">Service</h2>
                     <div class="border-section__border"></div>
                   </div>
-                  <p class="title-section__title">Why Choose Us</p><span class="title-section__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</span>
+                  <div class="heading">
+                    <p class="heading__title">Why Choose Us</p><span class="heading__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</span>
+                  </div>
           <div class="shared-service__columns">
                     <div class="shared-service__column">
                       <div class="shared-service__icon"></div>
@@ -90,22 +92,22 @@
           </div>
         </section>
       </main>
-      <section class="accent-banner">
-        <h3 class="accent-banner__slogan">let's discuss making your interior like a dream place!</h3><span class="accent-banner__text">Contact us below to work together to build your amazing interior</span><a class="button button__banner" href="./contact-us.html">Contact Us</a>
+      <section class="accent">
+        <h3 class="accent__slogan">let's discuss making your interior like a dream place!</h3><span class="accent__text">Contact us below to work together to build your amazing interior</span><a class="button button_banner" href="./contact-us.html">Contact Us</a>
       </section>
       <footer class="footer page__footer">
         <div class="footer__column footer__column_logo"><a href="https://lizaelkina.github.io/gulp-pug-markup/"><img class="logo" src="./img/svg/logo.svg" alt="Логотип"></a>
           <h3 class="slogan">one of the best furniture agency.</h3>
         </div>
         <div class="footer__column footer__column_info">
-          <form class="footer__form" name="subscription" novalidate>
-            <label class="footer__form_label">Enter your email to get the latest news</label>
-            <input class="footer__form_input" type="email" name="email" placeholder="Email Address">
-            <button class="footer__form_btn" type="submit" aria-label="Subscribe to the newsletter"></button>
+          <form class="footer-form" name="subscription">
+            <label class="footer-form__label" for="footerEmail">Enter your email to get the latest news</label>
+            <input class="footer-form__input" id="footerEmail" required type="email" name="email" autocomplete="off" placeholder="Email Address">
+            <button class="footer-form__btn" type="submit" aria-label="Subscribe to the newsletter"></button>
           </form>
-          <nav class="footer__social">
-            <h4 class="footer__social_heading">Follow us On</h4>
-            <ul class="footer__social_list">
+          <nav class="footer-social">
+            <h4 class="footer-social__heading">Follow us On</h4>
+            <ul class="footer-social__list">
                     <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-facebook.svg" alt="Facebook"></a></li>
                     <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-instagram.svg" alt="Instagram"></a></li>
                     <li><a class="icon-social" target="_blank" href="./404.html"><img class="icon-social__img" src="./img/svg/icon-tiktok.svg" alt="Tiktok"></a></li>
