@@ -1,12 +1,12 @@
 include ../../../views/helpers/mixins
 
 section.material.page__section
-  +border-section('Material', 'material__border-section')
+  +border-section('Material').material__border-section
   .material__container
     .material__info
       p.material__title choice of materials for quality furniture.
       span.material__text You can custom the material as desired. And our furniture uses the best materials and selected quality materials.
-      +link-button('button__secondary', 'See Materials', './404.html')
+      +link-button('See Materials', './404.html').button__secondary
     .material__images
       img.material__images_fist(src='./img/page-home/material-img-1.png' alt='Wood')
       img.material__images_second(src='./img/page-home/material-img-2.png' alt='Epoxy')

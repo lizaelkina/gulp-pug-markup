@@ -1,13 +1,13 @@
-mixin link-button(extraClass, title, href='#')
-  a.button(class!=extraClass)(href=href)= title
+mixin link-button(title, href)
+  a.button&attributes(attributes)(href=href)= title
 
-mixin border-section(title, extraClass)
-  .border-section(class!=extraClass)
+mixin border-section(title)
+  .border-section&attributes(attributes)
     h2.border-section__text= title
     .border-section__border
 
-mixin rectangle(extraClass)
-  .rectangle(class!=extraClass)
+mixin rectangle
+  .rectangle&attributes(attributes)
     .rectangle__row
       p.rectangle__title 350+
       span.rectangle__subtitle Project Completed
@@ -18,8 +18,8 @@ mixin rectangle(extraClass)
       p.rectangle__title 15+
       span.rectangle__subtitle Years Experience
 
-mixin card-avatar(src, title, subtitle, extraClass)
-  .card-avatar(class!=extraClass)
+mixin card-avatar(src, title, subtitle)
+  .card-avatar&attributes(attributes)
     img.card-avatar__image(src=src alt=title)
     p.card-avatar__title= title
     span.card-avatar__subtitle= subtitle
