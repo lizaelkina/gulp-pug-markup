@@ -11,6 +11,7 @@
 - PUG
 - SCSS
 - GULP
+- JavaScript
 
 ## Ссылка на проект
 
