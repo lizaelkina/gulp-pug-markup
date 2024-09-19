@@ -30,6 +30,7 @@
 
     &__item:hover {
       opacity: .6;
+      border-bottom: 1px solid $gray;
     }
   }
 }
