@@ -1,15 +1,21 @@
 .accent {
-  @include section;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  width: 100%;
   background-color: $blue;
-  display: grid;
-  grid-template-columns: fit-content(613px) fit-content(432px);
-  grid-template-areas:
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    @include section;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: fit-content(613px) fit-content(432px);
+    grid-template-areas:
     "slogan text"
     "slogan button";
-  column-gap: 155px;
-  row-gap: 20px;
+    column-gap: 155px;
+    row-gap: 20px;
+  }
 
   &__slogan {
     grid-area: slogan;
