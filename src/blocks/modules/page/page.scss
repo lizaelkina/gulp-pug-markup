@@ -1,6 +1,6 @@
 .page {
   max-width: 1440px;
-  min-width: 1440px;
+  min-width: 320px;
   margin: 0 auto;
   font-family: $font-primary;
   color: $black50;
@@ -19,5 +19,18 @@
   &__footer {
     box-sizing: border-box;
     padding: 80px 120px 40px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .page__header {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .page__header {
+    padding: 20px;
   }
 }

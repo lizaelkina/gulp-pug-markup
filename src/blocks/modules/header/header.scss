@@ -9,28 +9,52 @@
     gap: 74px;
   }
 
-  .menu {
+  &__list {
     list-style: none;
     display: flex;
     gap: 74px;
+  }
 
-    &__item {
-      cursor: pointer;
-      text-decoration: none;
-      color: $black50;
-      font-family: $font-primary;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 160%;
+  &__item {
+    cursor: pointer;
+    text-decoration: none;
+    color: $black50;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
 
-      &_active {
-        font-family: $font-semibold;
-      }
+    &_active {
+      font-family: $font-semibold;
     }
+  }
 
-    &__item:hover {
-      opacity: .6;
-      border-bottom: 1px solid $gray;
-    }
+  &__item:hover {
+    opacity: .6;
+    border-bottom: 1px solid $gray;
+  }
+
+  &__burger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .header__links {
+    gap: 50px;
+  }
+
+  .header__list {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__links {
+    display: none;
+  }
+
+  .header__burger {
+    display: flex;
   }
 }

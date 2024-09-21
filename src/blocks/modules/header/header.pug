@@ -2,15 +2,17 @@ include ../../../views/helpers/mixins
 
 mixin menu(title, url)
   li
-    a.menu__item&attributes(attributes)(href=url)= title
+    a.header__item&attributes(attributes)(href=url)= title
 
 header.header.page__header
   include ../../components/logo/logo
   nav.header__links
-    ul.menu
+    ul.header__list
       +menu('Home', './')
       +menu('About Us', './about-us.html')
       +menu('Portfolio', './portfolio.html')
       +menu('Services', './services.html')
       +menu('Our Teams', './our-teams.html')
     +link-button('Contact Us', './contact-us.html').button_primary
+  button.button.button_icon.header__burger(type='button' aria-label='Open menu' aria-expanded='false')
+    +svg('menu').button_icon_svg
