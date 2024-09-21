@@ -9,8 +9,22 @@
   box-sizing: border-box;
   padding-left: 120px;
   padding-right: 120px;
+
+  @media screen and (max-width: 1260px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @mixin section-first {
   margin-top: 50px;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 0;
+  }
 }

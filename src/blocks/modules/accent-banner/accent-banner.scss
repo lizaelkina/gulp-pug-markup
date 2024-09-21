@@ -35,3 +35,26 @@
     color: $lightgray;
   }
 }
+
+@media screen and (max-width: 1260px) {
+  .accent__container {
+    column-gap: 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .accent__container {
+    column-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .accent__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accent__slogan {
+    font-size: 28px;
+  }
+}
