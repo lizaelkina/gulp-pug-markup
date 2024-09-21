@@ -15,9 +15,11 @@
   }
 
   &__image {
-    width: 883px;
+    max-width: 883px;
+    width: 75%;
     aspect-ratio: 883 / 525;
     object-fit: cover;
     object-position: center;
+    background-color: $blue;
   }
 }

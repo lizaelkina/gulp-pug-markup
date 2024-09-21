@@ -28,10 +28,12 @@
   }
 
   &__image {
+    max-width: 1200px;
     width: 100%;
     aspect-ratio: 1200 / 513;
     object-fit: cover;
     object-position: center;
+    background-color: $blue;
   }
 
 

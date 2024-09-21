@@ -50,6 +50,7 @@
   &__image {
     object-fit: cover;
     object-position: center;
+    background-color: $blue;
 
     &_type_fist {
       grid-area: fist;

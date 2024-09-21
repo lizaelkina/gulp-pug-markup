@@ -18,10 +18,11 @@
 
   &__image {
     grid-area: image;
-    width: 746px;
+    max-width: 746px;
     aspect-ratio: 746 / 365;
     object-fit: cover;
     object-position: center;
+    background-color: $blue;
   }
 
   &__title {
