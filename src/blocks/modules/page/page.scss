@@ -29,6 +29,12 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  .page__footer {
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -38,5 +44,9 @@
 
   .page__section {
     margin-bottom: 80px;
+  }
+
+  .page__footer {
+    padding: 20px;
   }
 }
