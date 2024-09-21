@@ -15,25 +15,6 @@
     gap: 74px;
   }
 
-  &__item {
-    cursor: pointer;
-    text-decoration: none;
-    color: $black50;
-    font-family: $font-primary;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
-
-    &_active {
-      font-family: $font-semibold;
-    }
-  }
-
-  &__item:hover {
-    opacity: .6;
-    border-bottom: 1px solid $gray;
-  }
-
   &__burger {
     display: none;
   }

@@ -2,6 +2,10 @@ mixin svg(name)
   svg(data-svg=name)&attributes(attributes)
     use(xlink:href=`./img/sprites/sprite.svg#${name}`)
 
+mixin menu(title, url)
+  li.menu
+    a.menu__item&attributes(attributes)(href=url)= title
+
 mixin link-button(title, href)
   a.button&attributes(attributes)(href=href)= title
 

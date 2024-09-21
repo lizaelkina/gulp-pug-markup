@@ -1,9 +1,5 @@
 include ../../../views/helpers/mixins
 
-mixin menu(title, url)
-  li
-    a.header__item&attributes(attributes)(href=url)= title
-
 header.header.page__header
   include ../../components/logo/logo
   nav.header__links

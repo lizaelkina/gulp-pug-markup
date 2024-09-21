@@ -1,0 +1,16 @@
+include ../../../views/helpers/mixins
+
+div.nav
+  div.nav__container
+    div.nav__header
+      button.button.button_icon.nav__button(type='button' aria-label='Close menu' aria-expanded='true')
+        +svg('close').button_icon_svg
+    nav.nav__links
+      ul.nav__list
+        +menu('Home', './')
+        +menu('About Us', './about-us.html')
+        +menu('Portfolio', './portfolio.html')
+        +menu('Services', './services.html')
+        +menu('Our Teams', './our-teams.html')
+      +link-button('Contact Us', './contact-us.html').button_primary
+div.nav__overlay
