@@ -27,6 +27,12 @@
     border: 2px solid $black;
   }
 
+  &__wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__image {
     max-width: 1200px;
     width: 100%;
@@ -35,7 +41,6 @@
     object-position: center;
     background-color: $blue;
   }
-
 
   &__side-text {
     display: flex;
@@ -48,5 +53,39 @@
     color: $black50;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .intro__title {
+    max-width: 581px;
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .intro {
+
+    &__container {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      max-width: 100%;
+      font-size: clamp(36px, 7vw, 60px);
+    }
+
+    &__border {
+      display: none;
+    }
+
+    &__side-text {
+      display: none;
+    }
+
+    &__wrap {
+      flex-direction: column;
+      gap: 30px;
+    }
   }
 }
