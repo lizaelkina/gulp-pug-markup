@@ -1,6 +1,6 @@
 .card-avatar {
   position: absolute;
-  top: 26px;
+  top: 40px;
   max-width: 276px;
   box-sizing: border-box;
   padding: 17px 20px;
@@ -14,11 +14,11 @@
   column-gap: 20px;
 
   &_position_right {
-    right: 160px;
+    right: 215px;
   }
 
   &_position_left {
-    left: 160px;
+    left: 215px;
   }
 
   &__image {
@@ -49,5 +49,25 @@
     line-height: 160%;
     color: $gray;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card-avatar {
+    top: 15px;
+
+    &_position_right {
+      right: 260px;
+    }
+
+    &_position_left {
+      right: 260px;
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .card-avatar {
+    display: none;
   }
 }

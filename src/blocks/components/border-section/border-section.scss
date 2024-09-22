@@ -1,6 +1,6 @@
 .border-section {
   margin-bottom: 20px;
-  width: 50%;
+  width: 60%;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -22,5 +22,11 @@
   &__border {
     flex: 1;
     border: 2px solid $black;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .border-section {
+    width: 100%;
   }
 }
