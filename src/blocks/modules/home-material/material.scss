@@ -8,7 +8,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    gap: 80px;
+    gap: 20px;
   }
 
   &__info {
@@ -39,8 +39,7 @@
   &__images {
     margin-top: -100px;
     display: grid;
-    grid-template-columns: 342px 241px;
-    grid-template-rows: 225px 225px;
+    grid-template-rows: repeat(auto-fit, minmax(225px, 1fr));
     grid-template-areas:
       "fist second"
       "fist third";
@@ -48,6 +47,7 @@
   }
 
   &__image {
+    width: 100%;
     object-fit: cover;
     object-position: center;
     background-color: $blue;
@@ -55,20 +55,41 @@
     &_type_fist {
       grid-area: fist;
       align-self: end;
-      width: 342px;
-      height: 392px;
+      aspect-ratio: 342 / 392;
     }
 
     &_type_second {
       grid-area: second;
-      width: 241px;
-      height: 225px;
+      align-self: end;
+      aspect-ratio: 241 / 225;
     }
 
     &_type_third {
       grid-area: third;
-      width: 195px;
-      height: 178px;
+      aspect-ratio: 195 / 178;
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .material__title {
+    font-size: clamp(28px, 4vw, 36px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .material__container {
+    flex-direction: column;
+  }
+
+  .material__images {
+    margin-top: -50px;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .material__images {
+    margin-top: -100px;
   }
 }
