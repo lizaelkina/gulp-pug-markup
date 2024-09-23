@@ -10,7 +10,7 @@
   }
 
   &__title {
-    max-width: 681px;
+    max-width: 60%;
     font-family: $font-bold;
     font-weight: 700;
     font-size: 72px;
@@ -21,9 +21,9 @@
   &__border {
     position: absolute;
     margin-left: auto;
-    width: 45%;
-    top: 50px;
-    right: 120px;
+    width: 40%;
+    top: 7%;
+    right: 9%;
     border: 2px solid $black;
   }
 
@@ -58,8 +58,8 @@
 
 @media screen and (max-width: 1280px) {
   .intro__title {
-    max-width: 581px;
-    font-size: 60px;
+    max-width: 55%;
+    font-size: 62px;
   }
 }
 
@@ -71,21 +71,45 @@
     }
 
     &__title {
-      max-width: 100%;
-      font-size: clamp(36px, 7vw, 60px);
-    }
-
-    &__border {
-      display: none;
+      max-width: 50%;
+      font-size: clamp(32px, 5vw, 52px);
     }
 
     &__side-text {
-      display: none;
+      font-size: 14px;
     }
 
     &__wrap {
       flex-direction: column;
       gap: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro__container {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .intro__title {
+    max-width: 80%;
+  }
+
+  .intro__border {
+    display: none;
+  }
+
+  .intro__side-text {
+    font-size: 10px;
+    align-self: end;
+    text-align: end;
+    writing-mode: horizontal-tb;
+    transform: none;
+
+    &_order {
+      order: -1;
     }
   }
 }

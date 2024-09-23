@@ -8,8 +8,8 @@
 
   &_position_absolute {
     position: absolute;
-    top: -150px;
-    right: 95px;
+    top: -30%;
+    right: 10%;
   }
 
   &__row {
@@ -23,7 +23,7 @@
     margin: 0;
     font-family: $font-primary;
     font-weight: 400;
-    font-size: 52px;
+    font-size: clamp(24px, 3vw, 52px);
     line-height: 160%;
   }
 
@@ -35,9 +35,9 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 780px) {
   .rectangle {
-    padding: 20px;
+    padding: 20px 28px 24px;
     flex-direction: row;
     justify-content: space-around;
     gap: 30px;
@@ -45,10 +45,6 @@
 
     &_position_absolute {
       position: static;
-    }
-
-    &__title {
-      font-size: 24px;
     }
   }
 }
