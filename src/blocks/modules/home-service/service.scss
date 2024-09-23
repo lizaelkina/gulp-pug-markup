@@ -1,13 +1,13 @@
 .service {
   @include section;
-  min-height: 829px;
-  background-image: url(../img/page-home/service-banner.jpg);
-  background-position: right 25% bottom;
-  background-repeat: no-repeat;
-  background-size: 1076px 525px;
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+  }
 
   &__list {
-    width: 74%;
+    grid-column: span 12;
     background-color: $white;
     box-sizing: border-box;
     padding: 0 40px 40px 0;
@@ -15,6 +15,14 @@
     display: flex;
     flex-direction: column;
     gap: 35px;
+  }
+
+  &__image {
+    z-index: -1;
+    margin-top: -150px;
+    width: 100%;
+    aspect-ratio: 1076 / 515;
+    grid-column: 3 / 17;
   }
 
   &__item {
@@ -48,5 +56,25 @@
     background-size: 32px 32px;
     background-image: url(../img/svg/icon-arrow.svg);
     background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .service__list {
+    grid-column: span 14;
+  }
+
+  .service__image {
+    margin-top: -140px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .service__list {
+    grid-column: span 17;
+  }
+
+  .service__image {
+    display: none;
   }
 }
