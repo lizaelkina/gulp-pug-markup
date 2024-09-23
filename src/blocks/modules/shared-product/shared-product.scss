@@ -81,3 +81,38 @@
     line-height: 160%;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .product__title {
+    font-size: clamp(28px, 4vw, 36px);
+  }
+
+  .product__item {
+    font-size: clamp(24px, 4vw, 36px);
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .product__container {
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .product__wrap {
+    grid-template-areas:
+      "number grow arrow"
+      ". text .";
+    column-gap: 24px;
+    row-gap: 10px;
+  }
+
+  .product__list {
+    margin-top: 30px;
+    gap: 30px;
+  }
+
+  .product__text {
+    font-size: 16px;
+  }
+}

@@ -67,14 +67,25 @@
   .service__image {
     margin-top: -140px;
   }
+
+  .service__item {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .service__list {
     grid-column: span 17;
+    padding: 0;
+  }
+
+  .service__container {
+    gap: 20px;
   }
 
   .service__image {
-    display: none;
+    margin-top: 35px;
+    grid-column: span 17;
+    grid-row: 2;
   }
 }
