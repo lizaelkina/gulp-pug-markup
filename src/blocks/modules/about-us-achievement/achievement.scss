@@ -11,7 +11,8 @@
 
   &__container {
     display: flex;
-    gap: 59px;
+    justify-content: space-between;
+    gap: 45px;
   }
 
   &__image {
@@ -21,5 +22,47 @@
     object-fit: cover;
     object-position: center;
     background-color: $blue;
+  }
+
+  &__rectangle {
+    width: 100%;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .achievement__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1124px) {
+  .achievement__title {
+    font-size: clamp(22px, 5vw, 28px);
+  }
+
+  .achievement__image {
+    width: 65%;
+  }
+
+  .achievement__rectangle {
+    padding: 20px 28px 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .achievement__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .achievement__image {
+    width: 100%;
+  }
+
+  .achievement__rectangle {
+    order: -1;
+    padding: 20px 28px 24px;
   }
 }
