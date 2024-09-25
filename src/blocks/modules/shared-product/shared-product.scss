@@ -87,6 +87,10 @@
     font-size: clamp(28px, 4vw, 36px);
   }
 
+  .product__list {
+    margin-top: 50px;
+  }
+
   .product__item {
     font-size: clamp(24px, 4vw, 36px);
   }
@@ -109,7 +113,6 @@
 
   .product__list {
     margin-top: 30px;
-    gap: 30px;
   }
 
   .product__text {
