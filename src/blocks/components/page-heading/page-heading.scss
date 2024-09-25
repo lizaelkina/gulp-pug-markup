@@ -42,3 +42,24 @@
     background-color: $blue;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .page-heading__subtitle_about {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-heading {
+    gap: 20px;
+
+    &__title {
+      font-size: 40px;
+      line-height: 100%;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+}
