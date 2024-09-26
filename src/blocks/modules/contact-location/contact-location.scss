@@ -2,15 +2,24 @@
   @include section;
 
   &__columns {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     gap: 60px;
   }
 
   &__column {
-    max-width: 334px;
     display: flex;
     flex-direction: column;
+    gap: 40px;
+
+    &_main {
+      min-width: 30%;
+    }
+  }
+
+  &__container {
+    display: flex;
     gap: 40px;
   }
 
@@ -43,5 +52,47 @@
     font-size: 18px;
     line-height: 160%;
     color: $gray;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+
+  .location {
+
+    &__column {
+      gap: 30px;
+    }
+
+    &__container {
+      gap: 30px;
+    }
+
+    &__text {
+      gap: 10px;
+    }
+
+    &__title {
+      font-size: 22px;
+      line-height: 100%;
+
+      &_big {
+        font-size: 28px;
+      }
+    }
+
+    &__container {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .location {
+
+    &__columns {
+      flex-direction: column;
+      gap: 45px;
+    }
   }
 }
