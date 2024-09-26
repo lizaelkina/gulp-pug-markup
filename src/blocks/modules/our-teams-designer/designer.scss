@@ -6,30 +6,29 @@
     padding: 0;
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(4, 282px);
+    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
     gap: 24px;
   }
 
   &__item {
-    position: relative;
     background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__foto {
     display: block;
-    width: 282px;
-    height: 386px;
+    width: 100%;
+    aspect-ratio: 282 / 386;
     object-fit: cover;
     object-position: center;
+    background-color: $blue;
   }
 
   &__card {
-    position: absolute;
-    top: 292px;
-    left: 12px;
-    bottom: 12px;
-    right: 12px;
-    width: 258px;
+    margin-top: -107px;
+    width: 92%;
     box-sizing: border-box;
     padding: 18px;
     background-color: $white;
@@ -51,5 +50,11 @@
     line-height: 160%;
     color: $gray;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .designer__list {
+    margin-bottom: 20px;
   }
 }
