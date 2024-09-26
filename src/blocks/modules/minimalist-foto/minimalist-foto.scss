@@ -8,7 +8,7 @@
   gap: 32px;
 
   &__image {
-    width: 584px;
+    width: 100%;
     aspect-ratio: 584 / 513;
     object-fit: cover;
     object-position: center;
@@ -16,7 +16,6 @@
 
     &_middle {
       grid-area: middle;
-      width: 1200px;
       aspect-ratio: 1200 / 513;
     }
 
@@ -35,5 +34,13 @@
     &_bottom-right {
       grid-area: bottom-right;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .m-foto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
