@@ -29,33 +29,40 @@
     <div class="page">
       <header class="header page__header"><a href="./"><img class="logo" src="./img/svg/logo.svg" alt="Логотип"></a>
         <nav class="header__links">
-          <ul class="menu">
-                  <li><a class="menu__item" href="./">Home</a></li>
-                  <li><a class="menu__item" href="./about-us.html">About Us</a></li>
-                  <li><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
-                  <li><a class="menu__item" href="./services.html">Services</a></li>
-                  <li><a class="menu__item" href="./our-teams.html">Our Teams</a></li>
+          <ul class="header__list">
+                  <li class="menu"><a class="menu__item" href="./">Home</a></li>
+                  <li class="menu"><a class="menu__item" href="./about-us.html">About Us</a></li>
+                  <li class="menu"><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
+                  <li class="menu"><a class="menu__item" href="./services.html">Services</a></li>
+                  <li class="menu"><a class="menu__item" href="./our-teams.html">Our Teams</a></li>
           </ul><a class="button button_primary" href="./contact-us.html">Contact Us</a>
         </nav>
+        <button class="button button_icon header__burger" type="button" aria-label="Open menu" aria-expanded="false">
+                <svg class="button_icon_svg" data-svg="menu">
+                  <use xlink:href="./img/sprites/sprite.svg#menu"></use>
+                </svg>
+        </button>
       </header>
       <main class="content">
         <section class="intro page__section">
           <div class="intro__container">
             <h1 class="intro__title">Design your interior with high quality.</h1>
-            <div class="intro__side-text"><span>ALL RIGHT RESERVED</span><span>2022</span></div>
+            <div class="intro__side-text"><span>ALL RIGHT RESERVED</span><span class="intro__order">2022</span></div>
           </div>
-          <div class="intro__border"></div><img class="intro__image" src="./img/page-home/main-banner.jpg" alt="Example of our design">
-                  <div class="rectangle rectangle_position_absolute">
-                    <div class="rectangle__row">
-                      <p class="rectangle__title">350+</p><span class="rectangle__subtitle">Project Completed</span>
+          <div class="intro__border"></div>
+          <div class="intro__wrap"><img class="intro__image" src="./img/page-home/main-banner.jpg" alt="Example of our design">
+                    <div class="rectangle rectangle_position_absolute">
+                      <div class="rectangle__row">
+                        <p class="rectangle__title">350+</p><span class="rectangle__subtitle">Project Completed</span>
+                      </div>
+                      <div class="rectangle__row">
+                        <p class="rectangle__title">23+</p><span class="rectangle__subtitle">Professional Teams</span>
+                      </div>
+                      <div class="rectangle__row">
+                        <p class="rectangle__title">15+</p><span class="rectangle__subtitle">Years Experience</span>
+                      </div>
                     </div>
-                    <div class="rectangle__row">
-                      <p class="rectangle__title">23+</p><span class="rectangle__subtitle">Professional Teams</span>
-                    </div>
-                    <div class="rectangle__row">
-                      <p class="rectangle__title">15+</p><span class="rectangle__subtitle">Years Experience</span>
-                    </div>
-                  </div>
+          </div>
         </section>
         <section class="about page__section">
                   <div class="border-section">
@@ -65,6 +72,7 @@
           <blockquote class="about__blockquote">"We're one of the best furniture agency. Prioritizing customers and making purchases easy are the hallmarks of our agency."</blockquote>
           <div class="card"><img class="card__image" src="./img/page-home/about-banner.jpg" alt="Example of our design">
             <div class="card__info">
+              <div class="card__container"></div>
                       <div class="card-avatar card-avatar_position_right"><img class="card-avatar__image" src="./img/card-avatar.png" alt="Arga Danaan">
                         <p class="card-avatar__title">Arga Danaan</p><span class="card-avatar__subtitle">CEO of Dananz</span>
                       </div>
@@ -80,14 +88,16 @@
                   <div class="heading">
                     <p class="heading__title">attractive furniture with the best quality.</p><span class="heading__subtitle">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</span>
                   </div>
-          <ul class="service__list">
-                    <li class="service__item"><a class="service__container" href="./services.html"><span class="service__number">01</span><span class="service__grow">Interior Design</span>
-                        <div class="service__arrow"></div></a></li>
-                    <li class="service__item"><a class="service__container" href="./services.html"><span class="service__number">02</span><span class="service__grow">Consultant</span>
-                        <div class="service__arrow"></div></a></li>
-                    <li class="service__item"><a class="service__container" href="./services.html"><span class="service__number">03</span><span class="service__grow">Construction Consultant</span>
-                        <div class="service__arrow"></div></a></li>
-          </ul>
+          <div class="service__wrap">
+            <ul class="service__list">
+                      <li class="service__item"><a class="service__container" href="./services.html"><span class="service__number">01</span><span class="service__grow">Interior Design</span>
+                          <div class="service__arrow"></div></a></li>
+                      <li class="service__item"><a class="service__container" href="./services.html"><span class="service__number">02</span><span class="service__grow">Consultant</span>
+                          <div class="service__arrow"></div></a></li>
+                      <li class="service__item"><a class="service__container" href="./services.html"><span class="service__number">03</span><span class="service__grow">Construction Consultant</span>
+                          <div class="service__arrow"></div></a></li>
+            </ul><img class="service__image" src="./img/page-home/service-banner.jpg" alt="Example of our design">
+          </div>
         </section>
         <section class="product page__section">
                   <div class="border-section">
@@ -122,11 +132,13 @@
         </section>
       </main>
       <section class="accent">
-        <h3 class="accent__slogan">let's discuss making your interior like a dream place!</h3><span class="accent__text">Contact us below to work together to build your amazing interior</span><a class="button button_banner" href="./contact-us.html">Contact Us</a>
+        <div class="accent__container">
+          <h3 class="accent__slogan">let's discuss making your interior like a dream place!</h3><span class="accent__text">Contact us below to work together to build your amazing interior</span><a class="button button_banner" href="./contact-us.html">Contact Us</a>
+        </div>
       </section>
       <footer class="footer page__footer">
         <div class="footer__column footer__column_logo"><a href="./"><img class="logo" src="./img/svg/logo.svg" alt="Логотип"></a>
-          <h3 class="slogan">one of the best furniture agency.</h3>
+          <h3 class="footer__slogan">one of the best furniture agency.</h3>
         </div>
         <div class="footer__column footer__column_info">
           <form class="footer-form" name="subscription">
@@ -145,6 +157,27 @@
           </nav>
         </div>
       </footer>
+      <div class="nav">
+        <div class="nav__container">
+          <div class="nav__header">
+            <button class="button button_icon nav__button" type="button" aria-label="Close menu" aria-expanded="true">
+                    <svg class="button_icon_svg" data-svg="close">
+                      <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                    </svg>
+            </button>
+          </div>
+          <nav class="nav__links">
+            <ul class="nav__list">
+                    <li class="menu"><a class="menu__item" href="./">Home</a></li>
+                    <li class="menu"><a class="menu__item" href="./about-us.html">About Us</a></li>
+                    <li class="menu"><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
+                    <li class="menu"><a class="menu__item" href="./services.html">Services</a></li>
+                    <li class="menu"><a class="menu__item" href="./our-teams.html">Our Teams</a></li>
+            </ul><a class="button button_primary" href="./contact-us.html">Contact Us</a>
+          </nav>
+        </div>
+      </div>
+      <div class="nav__overlay"></div>
     </div>
   </body>
   <script src="js/main.min.js"></script>

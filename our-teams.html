@@ -29,14 +29,19 @@
     <div class="page">
       <header class="header page__header"><a href="./"><img class="logo" src="./img/svg/logo.svg" alt="Логотип"></a>
         <nav class="header__links">
-          <ul class="menu">
-                  <li><a class="menu__item" href="./">Home</a></li>
-                  <li><a class="menu__item" href="./about-us.html">About Us</a></li>
-                  <li><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
-                  <li><a class="menu__item" href="./services.html">Services</a></li>
-                  <li><a class="menu__item" href="./our-teams.html">Our Teams</a></li>
+          <ul class="header__list">
+                  <li class="menu"><a class="menu__item" href="./">Home</a></li>
+                  <li class="menu"><a class="menu__item" href="./about-us.html">About Us</a></li>
+                  <li class="menu"><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
+                  <li class="menu"><a class="menu__item" href="./services.html">Services</a></li>
+                  <li class="menu"><a class="menu__item" href="./our-teams.html">Our Teams</a></li>
           </ul><a class="button button_primary" href="./contact-us.html">Contact Us</a>
         </nav>
+        <button class="button button_icon header__burger" type="button" aria-label="Open menu" aria-expanded="false">
+                <svg class="button_icon_svg" data-svg="menu">
+                  <use xlink:href="./img/sprites/sprite.svg#menu"></use>
+                </svg>
+        </button>
       </header>
       <main class="content">
         <section class="our-teams page__section">
@@ -132,11 +137,13 @@
         </section>
       </main>
       <section class="accent">
-        <h3 class="accent__slogan">let's discuss making your interior like a dream place!</h3><span class="accent__text">Contact us below to work together to build your amazing interior</span><a class="button button_banner" href="./contact-us.html">Contact Us</a>
+        <div class="accent__container">
+          <h3 class="accent__slogan">let's discuss making your interior like a dream place!</h3><span class="accent__text">Contact us below to work together to build your amazing interior</span><a class="button button_banner" href="./contact-us.html">Contact Us</a>
+        </div>
       </section>
       <footer class="footer page__footer">
         <div class="footer__column footer__column_logo"><a href="./"><img class="logo" src="./img/svg/logo.svg" alt="Логотип"></a>
-          <h3 class="slogan">one of the best furniture agency.</h3>
+          <h3 class="footer__slogan">one of the best furniture agency.</h3>
         </div>
         <div class="footer__column footer__column_info">
           <form class="footer-form" name="subscription">
@@ -155,6 +162,27 @@
           </nav>
         </div>
       </footer>
+      <div class="nav">
+        <div class="nav__container">
+          <div class="nav__header">
+            <button class="button button_icon nav__button" type="button" aria-label="Close menu" aria-expanded="true">
+                    <svg class="button_icon_svg" data-svg="close">
+                      <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                    </svg>
+            </button>
+          </div>
+          <nav class="nav__links">
+            <ul class="nav__list">
+                    <li class="menu"><a class="menu__item" href="./">Home</a></li>
+                    <li class="menu"><a class="menu__item" href="./about-us.html">About Us</a></li>
+                    <li class="menu"><a class="menu__item" href="./portfolio.html">Portfolio</a></li>
+                    <li class="menu"><a class="menu__item" href="./services.html">Services</a></li>
+                    <li class="menu"><a class="menu__item" href="./our-teams.html">Our Teams</a></li>
+            </ul><a class="button button_primary" href="./contact-us.html">Contact Us</a>
+          </nav>
+        </div>
+      </div>
+      <div class="nav__overlay"></div>
     </div>
   </body>
   <script src="js/main.min.js"></script>
