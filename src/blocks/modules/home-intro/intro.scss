@@ -87,28 +87,31 @@
 }
 
 @media screen and (max-width: 600px) {
-  .intro__container {
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
+  .intro {
 
-  .intro__title {
-    max-width: 80%;
-  }
+    &__container {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
 
-  .intro__border {
-    display: none;
-  }
+    &__title {
+      max-width: 80%;
+    }
 
-  .intro__side-text {
-    font-size: 10px;
-    align-self: end;
-    text-align: end;
-    writing-mode: horizontal-tb;
-    transform: none;
+    &__border {
+      display: none;
+    }
 
-    &_order {
+    &__side-text {
+      font-size: 10px;
+      align-self: end;
+      text-align: end;
+      writing-mode: horizontal-tb;
+      transform: none;
+    }
+
+    &__order {
       order: -1;
     }
   }

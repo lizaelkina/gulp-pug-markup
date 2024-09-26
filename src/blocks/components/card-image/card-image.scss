@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
   .card {
     gap: 60px;
 
@@ -54,10 +54,14 @@
 
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 900px) {
   .card {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
+
+    &__info {
+      gap: 30px;
+    }
 
     &__container {
       display: none;
@@ -65,6 +69,11 @@
 
     &__image {
       width: 100%;
+    }
+
+    &__title {
+      margin: 0;
+      font-size: 22px;
     }
   }
 }

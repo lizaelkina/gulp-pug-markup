@@ -25,6 +25,12 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .border-section_image {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .border-section {
     width: 100%;

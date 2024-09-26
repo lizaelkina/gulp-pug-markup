@@ -3,4 +3,14 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  &__order {
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio-list__order {
+    order: 1;
+  }
 }
