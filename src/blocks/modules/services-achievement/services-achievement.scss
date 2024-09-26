@@ -1,5 +1,8 @@
 .services-achievement {
   @include section;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 
   &__list {
     display: flex;
@@ -9,6 +12,7 @@
 
   &__row {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(65%, 1fr));
     grid-template-areas:
       "image title"
       "image subtitle";
@@ -18,7 +22,7 @@
 
   &__image {
     grid-area: image;
-    max-width: 746px;
+    width: 100%;
     aspect-ratio: 746 / 365;
     object-fit: cover;
     object-position: center;
@@ -27,7 +31,7 @@
 
   &__title {
     grid-area: title;
-    display: grid;
+    display: flex;
     align-self: end;
     font-family: $font-semibold;
     font-weight: 600;
@@ -43,5 +47,17 @@
     font-size: 18px;
     line-height: 160%;
     color: $gray;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+
+  .services-achievement__row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-achievement__title {
+    align-self: start;
   }
 }
