@@ -2,7 +2,7 @@
   @include section;
   width: 100%;
   display: flex;
-  gap: 32px;
+  gap: 60px;
 
   &__column {
     width: 50%;
@@ -31,5 +31,25 @@
     font-size: 18px;
     line-height: 160%;
     color: $gray;
+  }
+}
+
+@media screen and (max-width: 1031px) {
+  .m-info__row {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .m-info {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .m-info__column {
+    width: 100%;
   }
 }
